@@ -1,4 +1,4 @@
-namespace BinaryTree;
+namespace BinaryTree {}
 /*https://leetcode.cn/problems/maximum-binary-tree/*/
 /*You are given an integer array nums with no duplicates. A maximum binary tree can be built recursively from nums using the following algorithm:
 

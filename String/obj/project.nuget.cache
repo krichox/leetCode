@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IY9IVnThM+xJJLTjQacyDKJ7HcT2hFY4sm8pnTo5vc3i/dgAQ6QmHFNN6CZ1hztB46oN+6GGdWgnvKoQ+Zu98A==",
+  "dgSpecHash": "YKj2sFelVXa5GBSkoti/yfWblgABmGCpg7TXcWxSvvte2pJsijV9SaYRBZtdZW2GHyeB6mgih7QEr9RIR2oUOQ==",
   "success": true,
-  "projectFilePath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/String/String.csproj",
+  "projectFilePath": "E:\\riderProject\\leetCode\\String\\String.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -31,7 +31,7 @@ Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 = (0 + 17) + 5
 = 17 + 5
 = 22*/
-namespace QueueStack;
+namespace QueueStack {}
 
 public class 逆波兰表达式求值
 {

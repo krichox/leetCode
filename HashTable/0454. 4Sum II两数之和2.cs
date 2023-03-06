@@ -1,4 +1,4 @@
-namespace HashTable;
+namespace HashTable {}
 
 /*https://leetcode.cn/problems/4sum-ii/*/
 /*Given four integer arrays nums1, nums2, nums3, and nums4 all of length n, return the number of tuples (i, j, k, l) such that:

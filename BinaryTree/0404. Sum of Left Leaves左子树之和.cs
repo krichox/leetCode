@@ -1,4 +1,4 @@
-namespace BinaryTree;
+namespace BinaryTree {}
 
 /*https://leetcode.cn/problems/sum-of-left-leaves/*/
 /*Given the root of a binary tree, return the sum of all left leaves.

@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace String;
+namespace String {}
 
 /*https://leetcode.cn/problems/reverse-words-in-a-string/*/
 

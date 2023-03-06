@@ -1,6 +1,8 @@
+using System;
+using System.Collections.Generic;
 using System.Text;
 
-namespace BinaryTree;
+namespace BinaryTree {}
 
 /*https://leetcode.cn/problems/binary-tree-paths/*/
 /*Given the root of a binary tree, return all root-to-leaf paths in any order.

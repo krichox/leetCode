@@ -1,4 +1,7 @@
-namespace BinaryTree;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace BinaryTree {}
 /*https://leetcode.cn/problems/path-sum/*/
 /*Given the root of a binary tree and an integer targetSum, return true if the tree has a root-to-leaf path such that adding up all the Values along the path equals targetSum.
 

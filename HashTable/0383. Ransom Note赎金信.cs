@@ -1,4 +1,4 @@
-namespace HashTable;
+namespace HashTable {}
 
 /*https://leetcode.cn/problems/ransom-note/*/
 

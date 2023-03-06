@@ -1,4 +1,4 @@
-namespace BinaryTree;
+namespace BinaryTree {}
 /*https://leetcode.cn/problems/n-ary-tree-level-order-traversal/*/
 
 /*Given an n-ary tree, return the level order traversal of its nodes' values.

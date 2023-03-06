@@ -1,4 +1,6 @@
-namespace BinaryTree;
+using System.Collections.Generic;
+
+namespace BinaryTree {}
 
 /*https://leetcode.cn/problems/binary-tree-postorder-traversal/*/
 /*Given the root of a binary tree, return the postorder traversal of its nodes' values.

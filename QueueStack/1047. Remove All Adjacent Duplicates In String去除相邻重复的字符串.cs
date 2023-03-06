@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Text;
 
-namespace QueueStack;
+namespace QueueStack {}
 
 public class 去除相邻重复的字符串
 {

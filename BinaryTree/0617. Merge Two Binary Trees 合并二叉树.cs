@@ -1,4 +1,7 @@
-namespace BinaryTree;
+namespace BinaryTree
+{
+    
+}
 /*https://leetcode.cn/problems/merge-two-binary-trees/*/
 /*You are given two binary trees root1 and root2.
 

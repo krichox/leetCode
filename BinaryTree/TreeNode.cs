@@ -1,4 +1,4 @@
-﻿namespace BinaryTree;
+﻿namespace BinaryTree {}
 
 public class TreeNode
 {

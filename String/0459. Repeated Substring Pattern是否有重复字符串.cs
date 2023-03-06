@@ -1,4 +1,4 @@
-namespace String;
+namespace String {}
 
 public class 是否有重复字符串 {
     

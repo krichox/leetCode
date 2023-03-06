@@ -1,4 +1,6 @@
-namespace BinaryTree;
+using System.Collections.Generic;
+
+namespace BinaryTree {}
 
 /*https://leetcode.cn/problems/search-in-a-binary-search-tree/*/
 /*You are given the root of a binary search tree (BST) and an integer val.

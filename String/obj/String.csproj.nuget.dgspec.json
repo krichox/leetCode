@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/linghan.kong/RiderProjects/LeetCodeProject/String/String.csproj": {}
+    "E:\\riderProject\\leetCode\\String\\String.csproj": {}
   },
   "projects": {
-    "/Users/linghan.kong/RiderProjects/LeetCodeProject/String/String.csproj": {
+    "E:\\riderProject\\leetCode\\String\\String.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/linghan.kong/RiderProjects/LeetCodeProject/String/String.csproj",
+        "projectUniqueName": "E:\\riderProject\\leetCode\\String\\String.csproj",
         "projectName": "String",
-        "projectPath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/String/String.csproj",
-        "packagesPath": "/Users/linghan.kong/.nuget/packages/",
-        "outputPath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/String/obj/",
+        "projectPath": "E:\\riderProject\\leetCode\\String\\String.csproj",
+        "packagesPath": "C:\\Users\\krichox\\.nuget\\packages\\",
+        "outputPath": "E:\\riderProject\\leetCode\\String\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/linghan.kong/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\krichox\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.307\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,6 @@
-namespace BinaryTree;
+using System.Collections.Generic;
+
+namespace BinaryTree {}
 /*https://leetcode.cn/problems/binary-tree-Right-side-view/*/
 
 

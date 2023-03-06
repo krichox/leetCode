@@ -1,4 +1,4 @@
-namespace BinaryTree;
+namespace BinaryTree {}
 
 /*https://leetcode.cn/problems/count-complete-tree-nodes/*/
 /*Given the root of a complete binary tree, return the number of the nodes in the tree.

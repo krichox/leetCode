@@ -1,4 +1,4 @@
-﻿namespace String;
+﻿namespace String {}
 
 public class 反转字符串
 {

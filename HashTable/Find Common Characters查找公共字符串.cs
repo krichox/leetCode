@@ -1,4 +1,4 @@
-namespace HashTable;
+namespace HashTable {}
 
 public class 查找公共字符串
 {

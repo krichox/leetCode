@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P43aKnHgf5rUQudojr+ZuDXFVMYU0bHq1971i13+afQEs2CmxRr6nkswOx+t1VLz+ydwOJqw1BW3hrqvpmPgCw==",
+  "dgSpecHash": "Py8ZbaRBYgkycOt6sgVE/jAQ+PXBUCQa4DSqoDlFAjqymFjK6JsVZPlWMt7ZX51VJM6dW9o/ZqCHI13DbYQPog==",
   "success": true,
-  "projectFilePath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/DoublePointer/DoublePointer.csproj",
+  "projectFilePath": "E:\\riderProject\\leetCode\\DoublePointer\\DoublePointer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

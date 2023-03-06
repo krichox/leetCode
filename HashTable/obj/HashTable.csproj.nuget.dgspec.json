@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/linghan.kong/RiderProjects/LeetCodeProject/HashTable/HashTable.csproj": {}
+    "E:\\riderProject\\leetCode\\HashTable\\HashTable.csproj": {}
   },
   "projects": {
-    "/Users/linghan.kong/RiderProjects/LeetCodeProject/HashTable/HashTable.csproj": {
+    "E:\\riderProject\\leetCode\\HashTable\\HashTable.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/linghan.kong/RiderProjects/LeetCodeProject/HashTable/HashTable.csproj",
+        "projectUniqueName": "E:\\riderProject\\leetCode\\HashTable\\HashTable.csproj",
         "projectName": "HashTable",
-        "projectPath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/HashTable/HashTable.csproj",
-        "packagesPath": "/Users/linghan.kong/.nuget/packages/",
-        "outputPath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/HashTable/obj/",
+        "projectPath": "E:\\riderProject\\leetCode\\HashTable\\HashTable.csproj",
+        "packagesPath": "C:\\Users\\krichox\\.nuget\\packages\\",
+        "outputPath": "E:\\riderProject\\leetCode\\HashTable\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/linghan.kong/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\krichox\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.307\\RuntimeIdentifierGraph.json"
         }
       }
     }

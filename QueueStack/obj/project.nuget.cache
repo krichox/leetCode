@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KcViCVJbIEAZfc3nDouodyVoMurxZOBl7WySSvw9cSMF1G/2rZfETxk5T3asuLnGPgN4bhKWJzzesTDApLAU9g==",
+  "dgSpecHash": "RwkmmvomZDNlAI3DU1rCDO1WrDW7vfNDKKpv4bPDuAPGe9DmSvIM2bR12WFPBQorLbGy/KmaflUqE8iPQap7Gg==",
   "success": true,
-  "projectFilePath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/QueueStack/QueueStack.csproj",
+  "projectFilePath": "E:\\riderProject\\leetCode\\QueueStack\\QueueStack.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

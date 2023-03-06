@@ -1,4 +1,6 @@
-namespace BinaryTree;
+using System.Collections.Generic;
+
+namespace BinaryTree {}
 
 /*https://leetcode.cn/problems/populating-next--pointers-in-each-node-ii/*/
 /*Given a binary tree

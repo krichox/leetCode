@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B1pNyLjjGTsG3p5SGotAPaIIAByzbrAuoXEkY0CATRKwFMrihaxFBcHUmo4s3jm8EAf+hTliycbrdfqyKNejtA==",
+  "dgSpecHash": "5CydYOCfUEj2m0bulCkmRMdbPn6laO2xDl5KjSvdEi3J9r/4tXSY8RjxZP1jxur6Djv4R9dpOIzpHgMcSv8SSQ==",
   "success": true,
-  "projectFilePath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/BinaryTree/BinaryTree.csproj",
+  "projectFilePath": "E:\\riderProject\\leetCode\\BinaryTree\\BinaryTree.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

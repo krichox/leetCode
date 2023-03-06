@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace String;
+namespace String {}
 
 public class 反转字符串二 {
     // 直接模拟

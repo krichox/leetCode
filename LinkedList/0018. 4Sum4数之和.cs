@@ -1,4 +1,4 @@
-namespace LinkedList;
+namespace LinkedList {}
 
 /*https://leetcode.cn/problems/4sum/*/
 

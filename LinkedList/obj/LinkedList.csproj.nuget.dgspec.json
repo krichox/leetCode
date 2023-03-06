@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/linghan.kong/RiderProjects/LeetCodeProject/LinkedList/LinkedList.csproj": {}
+    "E:\\riderProject\\leetCode\\LinkedList\\LinkedList.csproj": {}
   },
   "projects": {
-    "/Users/linghan.kong/RiderProjects/LeetCodeProject/LinkedList/LinkedList.csproj": {
+    "E:\\riderProject\\leetCode\\LinkedList\\LinkedList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/linghan.kong/RiderProjects/LeetCodeProject/LinkedList/LinkedList.csproj",
+        "projectUniqueName": "E:\\riderProject\\leetCode\\LinkedList\\LinkedList.csproj",
         "projectName": "LinkedList",
-        "projectPath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/LinkedList/LinkedList.csproj",
-        "packagesPath": "/Users/linghan.kong/.nuget/packages/",
-        "outputPath": "/Users/linghan.kong/RiderProjects/LeetCodeProject/LinkedList/obj/",
+        "projectPath": "E:\\riderProject\\leetCode\\LinkedList\\LinkedList.csproj",
+        "packagesPath": "C:\\Users\\krichox\\.nuget\\packages\\",
+        "outputPath": "E:\\riderProject\\leetCode\\LinkedList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/linghan.kong/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\krichox\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.307\\RuntimeIdentifierGraph.json"
         }
       }
     }

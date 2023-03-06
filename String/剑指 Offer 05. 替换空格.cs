@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace String;
+namespace String {}
 
 public class 替换空格
 {

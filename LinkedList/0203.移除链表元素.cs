@@ -1,4 +1,4 @@
-﻿namespace LinkedList;
+﻿namespace LinkedList {}
 
 public class 移除链表元素
 {

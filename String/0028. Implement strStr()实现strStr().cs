@@ -1,4 +1,4 @@
-namespace String;
+namespace String {}
 
 /*https://leetcode.cn/problems/implement-strstr/*/
 /*Implement strStr().
