@@ -1,4 +1,8 @@
-namespace Array.滑动窗口;
+using System;
+
+namespace Array.滑动窗口
+{
+}
 
 // https://leetcode.cn/problems/minimum-size-subarray-sum/
 /*给定一个含有 n 个正整数的数组和一个正整数 target 。

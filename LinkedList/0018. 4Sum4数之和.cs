@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace LinkedList {}
 
 /*https://leetcode.cn/problems/4sum/*/

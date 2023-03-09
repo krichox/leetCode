@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace HashTable {}
 
 /*https://leetcode.cn/problems/ransom-note/*/

@@ -42,6 +42,7 @@ public class 从中序与后序遍历序列构造二叉树
     private TreeNode findNode(int[] inorder, int inBegin, int inEnd, int[] postorder, int postBegin, int postEnd)
     {
         // 左闭右开
+        //  终止条件
         if(inBegin >= inEnd || postBegin >= postEnd)
         {
             return null;
