@@ -1,4 +1,4 @@
-namespace Array.双指针;
+namespace Array.双指针{}
 
 // https://leetcode.cn/problems/remove-element/
 /*

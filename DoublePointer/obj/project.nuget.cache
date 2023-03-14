@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Py8ZbaRBYgkycOt6sgVE/jAQ+PXBUCQa4DSqoDlFAjqymFjK6JsVZPlWMt7ZX51VJM6dW9o/ZqCHI13DbYQPog==",
+  "dgSpecHash": "S/uQugs3QJ3yyWAjbGEcGrEvHMtkmSxnVT8ZwRdW5FZZMVWFMKrV7dhB853bMgZO5NqOQjBD7f1CmoOnoG4m9Q==",
   "success": true,
   "projectFilePath": "E:\\riderProject\\leetCode\\DoublePointer\\DoublePointer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

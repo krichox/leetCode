@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RwkmmvomZDNlAI3DU1rCDO1WrDW7vfNDKKpv4bPDuAPGe9DmSvIM2bR12WFPBQorLbGy/KmaflUqE8iPQap7Gg==",
+  "dgSpecHash": "fE61yw6Y7Ud46FKBW4oTxKSUsUaKl2PTvftssr2R0Pwth7t6V7pGpk6QeDRLh2jvA1RH3O5tcbfDTxVU7afEfA==",
   "success": true,
   "projectFilePath": "E:\\riderProject\\leetCode\\QueueStack\\QueueStack.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

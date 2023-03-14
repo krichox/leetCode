@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5CydYOCfUEj2m0bulCkmRMdbPn6laO2xDl5KjSvdEi3J9r/4tXSY8RjxZP1jxur6Djv4R9dpOIzpHgMcSv8SSQ==",
+  "dgSpecHash": "dlmGwk+n1acPlqdQ+Xdbbbwp+ZO/gJlkq8kuL+ZscVo5tgvXdkJiK4NZKiwFv9otKH9/jS5DdD4jIY21+N3EfA==",
   "success": true,
   "projectFilePath": "E:\\riderProject\\leetCode\\BinaryTree\\BinaryTree.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

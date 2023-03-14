@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "f4aktbt8HcGKaGqxkfHiFqoEOsCShrjsDSpX17PkKoC9lJRE2QU8r5UkGsBi/udeiw2kiAtelc3gsygxkUPbVQ==",
+  "dgSpecHash": "i6Nr45ZuJCFvQfr+QOovNKWcSPkGsHksurO2PZQoQSA4gJbkHIKfO9wRX6yioePXKF1DzFWqcNQx6WYo7U7wlw==",
   "success": true,
   "projectFilePath": "E:\\riderProject\\leetCode\\LinkedList\\LinkedList.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.14\\microsoft.netcore.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.14\\microsoft.windowsdesktop.app.ref.6.0.14.nupkg.sha512",
+    "C:\\Users\\krichox\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.14\\microsoft.aspnetcore.app.ref.6.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

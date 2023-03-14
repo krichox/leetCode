@@ -1,4 +1,4 @@
-namespace Array.BinarySearch;
+namespace Array.BinarySearch{}
 
 /*给定一个 正整数 num ，编写一个函数，如果 num 是一个完全平方数，则返回 true ，否则返回 false 。
 
