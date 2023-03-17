@@ -5,6 +5,7 @@
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="\usr\local\share\dotnet\shared\Microsoft.NETCore.App\6.0.0\System.Collections.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.dll" /&gt;&#xD;
+  &lt;Assembly Path="E:\riderProject\leetCode\Array\bin\Debug\net6.0\Array.dll" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06955830_002D6377_002D4217_002D8557_002D8b375d251ec4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
