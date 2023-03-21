@@ -43,6 +43,7 @@
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test2&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test3&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>
