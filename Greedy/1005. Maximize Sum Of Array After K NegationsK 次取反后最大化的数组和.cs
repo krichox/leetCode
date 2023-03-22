@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace Greedy
 {
@@ -28,25 +29,30 @@ Input: nums = [2,-3,-1,5,-4], k = 2
 Output: 13
 Explanation: Choose indices (1, 4) and nums becomes [2,3,-1,5,4].
  */
-    public class Maximize_Sum_Of_Array_After_K_NegationsK_次取反后最大化的数组和 {
-        public int LargestSumAfterKNegations(int[] nums, int k) {
+    public class Maximize_Sum_Of_Array_After_K_NegationsK_次取反后最大化的数组和
+    {
+        public int LargestSumAfterKNegations(int[] nums, int k)
+        {
+            Array.Sort(nums);
             var result = 0;
-            for(var i = 0; i < nums.Length; i++)
+            for (var i = 0; i < nums.Length; i++)
             {
-                if(nums[i] < 0)
+                if (nums[i] < 0 && k > 0)
                 {
                     nums[i] = -nums[i];
                     k--;
                 }
             }
 
-            if(k % 2 == 0)
+
+            if (k % 2 == 0)
             {
-                result =  nums.Sum();
+                result = nums.Sum();
             }
-            if(k % 2 == 1)
+
+            if (k % 2 == 1)
             {
-                result =  nums.Sum() - 2 *  nums.Min();
+                result = nums.Sum() - 2 * nums.Min();
             }
 
             return result;
