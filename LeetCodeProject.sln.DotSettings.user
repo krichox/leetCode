@@ -17,6 +17,8 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test3&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test4&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test5&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test6&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test7&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06955830_002D6377_002D4217_002D8557_002D8b375d251ec4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -61,6 +63,7 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test3&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test4&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test5&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test6&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	</wpf:ResourceDictionary>

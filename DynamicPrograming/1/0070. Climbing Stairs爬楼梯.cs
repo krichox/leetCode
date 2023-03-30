@@ -20,5 +20,33 @@
 
             return dp[n];
         }
+
+        public class Climbing_Stairs爬楼梯2
+        {
+            public int ClimbStairs(int n)
+            {
+
+                // 完全背包版本
+                var dp = new int[n + 1];
+
+                dp[0] = 1;
+
+                // 排列问题，讲究顺序，先遍历背包, 完全背包，无限取，顺序遍历
+                for (var i = 0; i <= n; i++)
+                {
+                    // 遍历物品
+                    for (var j = 1; j <= 2; j++)
+                    {
+                        if (i >= j)
+                        {
+                            dp[i] += dp[i - j];
+                        }
+
+                    }
+                }
+
+                return dp[n];
+            }
+        }
     }
 }
