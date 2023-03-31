@@ -7,40 +7,29 @@ namespace DynamicPrograming.打家劫舍
     /*https://leetcode.cn/problems/house-robber-ii/*/
     public class House_Robber_II打家劫舍2
     {
-        public int Rob(int[] nums) {
-            // 环形问题，可以拆分为Max([1:], [0, n-1])
-            return Math.Max(Rob2(nums, 0, nums.Length - 2), Rob2(nums, 1, nums.Length - 1));
+        // 树形dp
+        public int Rob(TreeNode root) {
+            var result = getRobFrom(root);
+            return Math.Max(result[0], result[1]);
         }
 
-        int Rob2(int[] nums, int start, int end)
+        // dp[0] 偷的最大值， dp[1]不偷的最大值
+        int[] getRobFrom(TreeNode root)
         {
-            if (nums.Length == 0)
+            if(root == null)
             {
-                return 0;
+                return new int [] {0, 0};
             }
 
-            if(nums.Length == 1)
-            {
-                return nums[0];
-            }
-            
-            if(start == end)
-            {
-                return nums[start];
-            }
+            // 计算当前节点偷还是不偷
 
-            // 定义dp数组为i时，能够偷取的最大值, 考虑下标0
-            var dp = new int[nums.Length];
+            var left = getRobFrom(root.Left);
+            var right = getRobFrom(root.Right);
 
-            dp[start] = nums[start];
-            dp[start + 1] = Math.Max(dp[start], nums[start + 1]);
+            var curSteal = root.Val + left[1] + right[1];
+            var noSteal = Math.Max(left[0], left[1]) + Math.Max(right[0], right[1]);
 
-            for (var i = start + 2; i <= end ; i++)
-            {
-                dp[i] = Math.Max(dp[i - 2] + nums[i], dp[i - 1]);
-            }
-
-            return dp[end];
+            return new int []{curSteal, noSteal};
         }
     }
 }
