@@ -5,6 +5,7 @@ namespace DynamicPrograming.打家劫舍
     /*https://leetcode.cn/problems/house-robber/*/
     public class House_Robber打家劫舍 {
         public int Rob(int[] nums) {
+            // 状态dp
             // 定义dp数组，dp[i]: 长度为i可以偷取的最大值
 
             // dp[i]偷： dp[i - 2] + nums[i]
