@@ -32,5 +32,28 @@ namespace DynamicPrograming.买卖股票的最佳时机
 
             return Math.Max(dp[prices.Length - 1, 3], Math.Max(dp[prices.Length - 1, 1], dp[prices.Length - 1, 2]));
         }
+        
+        public int MaxProfit3(int[] prices) {
+
+            var dp = new int[prices.Length + 1, 2];
+
+            if(prices.Length == 1)
+            {
+                return 0;
+            }
+
+            dp[1, 0] = -prices[0];
+
+
+            for(var i = 2; i <= prices.Length; i++)
+            {
+                // 第i天是冷冻期，和第i天不是冷冻期
+                dp[i, 0] = Math.Max(dp[i - 1, 0], dp[i - 2, 1] - prices[i - 1]);
+                dp[i, 1] = Math.Max(dp[i - 1, 1], dp[i - 1, 0] + prices[i - 1]);
+          
+            }
+
+            return dp[prices.Length, 1];
+        }
     }
 }
