@@ -106,3 +106,8 @@
 <a href="https://programmercarl.com/other/kstar.html" target="_blank">
   <img src="../pics/网站星球宣传海报.jpg" width="1000"/>
 </a>
+
+
+
+子数组/子串: subArray/subString 是连续的
+子序列：subsequence 是不连续的

@@ -1,4 +1,6 @@
-﻿namespace Greedy
+﻿using System;
+
+namespace Greedy
 {
     /*https://leetcode.cn/problems/maximum-subarray/description/
      Given an integer array nums, find the 
@@ -47,6 +49,29 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
             }
 
             return max;
+        }
+        
+        public int MaxSubArray2(int[] nums)
+        {
+            // 动态规划方法
+            // 定义dp,dp[i]数组小标为i时，最大的子数组和
+            if (nums.Length == 1)
+            {
+                return nums[0];
+            }
+
+            var dp = new int[nums.Length];
+            dp[0] = nums[0];
+            var res = dp[0];
+            // 初始化
+
+            for (var i = 1; i < nums.Length; i++)
+            {
+                dp[i] = Math.Max(dp[i - 1] + nums[i], nums[i]);
+                res = Math.Max(dp[i], res);
+            }
+
+            return res;
         }
     }
 }
