@@ -40,6 +40,25 @@ namespace DynamicPrograming.区间dp
             return res;
 
         }
-    
+
+        public int MinScoreTriangulation2(int[] values)
+        {
+            // 动态规划
+            var n = values.Length;
+            var dp = new int[n, n];
+            for (var i = n - 3; i >= 0; i--)
+            {
+                for (var j = i + 2; j < n; j++)
+                {
+                    dp[i, j] = int.MaxValue;
+                    for (var k = i + 1; k < j; k++)
+                    {
+                        dp[i, j] = Math.Min(dp[i, j], dp[i, k] + dp[k, j] + values[i] * values[k] * values[j]);
+                    }
+                }
+            }
+
+            return dp[0, n - 1];
+        }
     }
 }
