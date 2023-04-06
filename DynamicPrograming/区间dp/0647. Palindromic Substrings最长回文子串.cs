@@ -6,50 +6,37 @@ namespace DynamicPrograming.区间dp
     /*https://leetcode.cn/problems/palindromic-substrings/description/*/
     public class Palindromic_Substrings最长回文子串
     {
-        StringBuilder path;
-        List<string> result = new List<string>();
-        public int CountSubstrings(string s) {
-            path = new StringBuilder();
-            backTracing(s, 0);
-            return result.Count;
-        }
-
-        void backTracing(string s, int startIndex)
+        public int CountSubstrings(string s)
         {
-            // 递归边界
-            result.Add(path.ToString());
-            if (path.Length == s.Length)
+            // 定义dp数组，下标为i,j 时，是否为回文串
+
+            var dp = new bool[s.Length, s.Length];
+            var result = 0;
+            for (var i = s.Length - 1; i >= 0; i--)
             {
-                return;
-            }
-            for(var i = startIndex; i < s.Length; i++)
-            {
-                var subString = s.Substring(startIndex, i - startIndex + 1);
-                if(isPalindromic(subString))
+                for (var j = i; j < s.Length; j++)
                 {
-                    path.Append(subString);
-                    backTracing(s, i + 1);
-                    path.Remove(path.Length - 1,1);
+                    if (s[i] == s[j])
+                    {
+                        // 只有1或者两个元素
+                        if (j - i <= 1)
+                        {
+                            dp[i, j] = true;
+                            result++;
+                        }
+                        else
+                        {
+                            dp[i, j] = dp[i + 1, j - 1];
+                            if (dp[i, j])
+                            {
+                                result++;
+                            }
+                        }
+                    }
                 }
             }
-        }
 
-        private bool isPalindromic(string s)
-        {
-            var left = 0;
-            var right = s.Length - 1;
-            while(left <= right)
-            {
-                if(s[left] != s[right])
-                {
-                    return false;
-                }
-
-                left++;
-                right--;
-            }
-
-            return true;
+            return result;
         }
     }
 }

@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicPrograming", "Dynami
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtherProject", "OtherProject\OtherProject.csproj", "{A223832F-9FEC-4027-8066-63FDB023CCE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonotonicStack", "MonotonicStack\MonotonicStack.csproj", "{2A8A7536-2AE2-467E-866E-3F6760297088}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{A223832F-9FEC-4027-8066-63FDB023CCE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A223832F-9FEC-4027-8066-63FDB023CCE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A223832F-9FEC-4027-8066-63FDB023CCE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A8A7536-2AE2-467E-866E-3F6760297088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A8A7536-2AE2-467E-866E-3F6760297088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A8A7536-2AE2-467E-866E-3F6760297088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A8A7536-2AE2-467E-866E-3F6760297088}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

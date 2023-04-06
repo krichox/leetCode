@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace QueueStack {}
 
 /*https://leetcode.cn/problems/top-k-frequent-elements/*/
