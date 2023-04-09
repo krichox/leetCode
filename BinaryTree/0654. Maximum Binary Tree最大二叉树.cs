@@ -1,5 +1,6 @@
-namespace BinaryTree {}
-/*https://leetcode.cn/problems/maximum-binary-tree/*/
+namespace BinaryTree
+{
+    /*https://leetcode.cn/problems/maximum-binary-tree/*/
 /*You are given an integer array nums with no duplicates. A maximum binary tree can be built recursively from nums using the following algorithm:
 
 Create a root node whose value is the maximum value in nums.
@@ -23,42 +24,43 @@ Explanation: The recursive calls are as follow:
 Example 2:
 Input: nums = [3,2,1]
 Output: [3,null,2,null,1]*/
-public class 最大二叉树 {
-    /*构造树一般采用的是前序遍历，因为先构造中间节点，然后递归构造左子树和右子树。*/
-    public TreeNode ConstructMaximumBinaryTree(int[] nums) {
+    public class 最大二叉树 {
+        /*构造树一般采用的是前序遍历，因为先构造中间节点，然后递归构造左子树和右子树。*/
+        public TreeNode ConstructMaximumBinaryTree(int[] nums) {
 
-        return getTreeNode(nums, 0, nums.Length);
-    }
-
-    private TreeNode getTreeNode(int[] nums, int leftIndex, int rightIndex)
-    {
-        if(rightIndex - leftIndex < 1)
-        {
-            return null;
+            return getTreeNode(nums, 0, nums.Length);
         }
 
-        if(rightIndex - leftIndex == 1)
+        private TreeNode getTreeNode(int[] nums, int leftIndex, int rightIndex)
         {
-            return new TreeNode(val: nums[leftIndex], left: null, right: null);
-        }
-
-        var maxIndex = leftIndex;
-        var maxValue = nums[maxIndex];
-        for(var i = leftIndex + 1; i < rightIndex; i++)
-        {
-            if(nums[i] > maxValue)
+            if(rightIndex - leftIndex < 1)
             {
-                maxValue = nums[i];
-                maxIndex = i;
+                return null;
             }
-        }
+
+            if(rightIndex - leftIndex == 1)
+            {
+                return new TreeNode(val: nums[leftIndex], left: null, right: null);
+            }
+
+            var maxIndex = leftIndex;
+            var maxValue = nums[maxIndex];
+            for(var i = leftIndex + 1; i < rightIndex; i++)
+            {
+                if(nums[i] > maxValue)
+                {
+                    maxValue = nums[i];
+                    maxIndex = i;
+                }
+            }
         
-        var root = new TreeNode(val: maxValue, left: null, right: null);
+            var root = new TreeNode(val: maxValue, left: null, right: null);
 
-        root.Left = getTreeNode(nums, leftIndex, maxIndex);
+            root.Left = getTreeNode(nums, leftIndex, maxIndex);
 
-        root.Right = getTreeNode(nums, maxIndex + 1, rightIndex);
+            root.Right = getTreeNode(nums, maxIndex + 1, rightIndex);
 
-        return root;
+            return root;
+        }
     }
 }

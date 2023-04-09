@@ -1,6 +1,6 @@
-namespace Array.双指针{}
-
-/*给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。
+namespace ArrayProject.双指针
+{
+    /*给你一个按 非递减顺序 排序的整数数组 nums，返回 每个数字的平方 组成的新数组，要求也按 非递减顺序 排序。
 
 示例 1：
 
@@ -25,27 +25,28 @@ Related Topics
 双指针
 排序*/
 
-public class 有序数组的平方 {
-    public int[] SortedSquares(int[] nums) {
-        var left = 0;
-        var right = nums.Length - 1;
-        var index = nums.Length - 1;
-        var result =  new int[nums.Length];
-        while(left <= right)
-        {
-            if(nums[left] * nums[left] <= nums[right] * nums[right])
+    public class 有序数组的平方 {
+        public int[] SortedSquares(int[] nums) {
+            var left = 0;
+            var right = nums.Length - 1;
+            var index = nums.Length - 1;
+            var result =  new int[nums.Length];
+            while(left <= right)
             {
-                result[index] = nums[right] * nums[right];
-                right--;
-            }else
-            {
-                result[index] = nums[left] * nums[left];
-                left++;
+                if(nums[left] * nums[left] <= nums[right] * nums[right])
+                {
+                    result[index] = nums[right] * nums[right];
+                    right--;
+                }else
+                {
+                    result[index] = nums[left] * nums[left];
+                    left++;
+                }
+
+                index--;
             }
 
-            index--;
+            return result;
         }
-
-        return result;
     }
 }

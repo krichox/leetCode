@@ -1,6 +1,6 @@
-namespace Array.BinarySearch{}
-
-/*给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+namespace ArrayProject.BinarySearch
+{
+    /*给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
 请必须使用时间复杂度为 O(log n) 的算法。
 
 示例 1:
@@ -31,55 +31,56 @@ nums 为 无重复元素 的 升序 排列数组
     - 104 <= target <= 104*/
 
 
-public class SearchForCaretPosition
-{
-    public int SearchInsert(int[] nums, int target) {
-        var left = 0;
-        var right = nums.Length -1;
-        var mid = 0;
-        while (left <= right)
-        {
+    public class SearchForCaretPosition
+    {
+        public int SearchInsert(int[] nums, int target) {
+            var left = 0;
+            var right = nums.Length -1;
+            var mid = 0;
+            while (left <= right)
+            {
             
-            mid = (right - left) / 2 + left;
-            if (nums[mid] == target)
+                mid = (right - left) / 2 + left;
+                if (nums[mid] == target)
+                {
+                    return mid;
+                }
+                else if(nums[mid] < target)
+                {
+                    left = mid + 1;
+                }else
+                {
+                    right = mid - 1;
+                }
+            }
+        
+            if(nums[mid] < target)
+            {
+                return mid + 1;
+            }else
             {
                 return mid;
             }
-            else if(nums[mid] < target)
-            {
-                left = mid + 1;
-            }else
-            {
-                right = mid - 1;
-            }
         }
-        
-        if(nums[mid] < target)
-        {
-            return mid + 1;
-        }else
-        {
-            return mid;
-        }
-    }
     
-    // 简单版本/
-    // logn, o(1)
-    public int SearchInsert2(int[] nums, int target) {
-        var left = 0;
-        var right = nums.Length - 1;
-        while(left <= right)
-        {
-            var mid = left + (right - left) /2;
-            if(nums[mid] < target)
+        // 简单版本/
+        // logn, o(1)
+        public int SearchInsert2(int[] nums, int target) {
+            var left = 0;
+            var right = nums.Length - 1;
+            while(left <= right)
             {
-                left = mid + 1;
-            }else
-            {
-                right = mid - 1;
+                var mid = left + (right - left) /2;
+                if(nums[mid] < target)
+                {
+                    left = mid + 1;
+                }else
+                {
+                    right = mid - 1;
+                }
             }
-        }
         
-        return left;
+            return left;
+        }
     }
 }

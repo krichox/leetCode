@@ -1,6 +1,6 @@
-namespace Array.双指针{}
-
-// https://leetcode.cn/problems/remove-element/
+namespace ArrayProject.双指针
+{
+    // https://leetcode.cn/problems/remove-element/
 /*
 给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素，并返回移除后数组的新长度。
 
@@ -43,25 +43,26 @@ for (int i = 0; i < len; i++) {
 数组
 双指针*/
 
-public class 移除元素
-{
-    public int RemoveElement(int[] nums, int val)
+    public class 移除元素
     {
-        int left = 0;
-        int right = nums.Length;
-        while (left < right)
+        public int RemoveElement(int[] nums, int val)
         {
-            if (nums[left] == val)
+            int left = 0;
+            int right = nums.Length;
+            while (left < right)
             {
-                nums[left] = nums[right - 1];
-                right--;
+                if (nums[left] == val)
+                {
+                    nums[left] = nums[right - 1];
+                    right--;
+                }
+                else
+                {
+                    left++;
+                }
             }
-            else
-            {
-                left++;
-            }
-        }
 
-        return left;
+            return left;
+        }
     }
 }

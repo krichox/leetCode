@@ -1,6 +1,6 @@
-namespace Array.双指针{}
-
-/*给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
+namespace ArrayProject.双指针
+{
+    /*给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
 
 请注意 ，必须在不复制数组的情况下原地对数组进行操作。
 
@@ -28,26 +28,27 @@ namespace Array.双指针{}
 Related Topics
 数组
 双指针*/
-public class 移动零 {
-    // 快慢指针
-    public void MoveZeroes(int[] nums) {
-        int slowPoint = 0;
-        var fastPoint = 0;
-        while(fastPoint < nums.Length)
-        {
-            if(nums[fastPoint] != 0)
+    public class 移动零 {
+        // 快慢指针
+        public void MoveZeroes(int[] nums) {
+            int slowPoint = 0;
+            var fastPoint = 0;
+            while(fastPoint < nums.Length)
             {
-                nums[slowPoint] = nums[fastPoint];
-
-                if(slowPoint != fastPoint)
+                if(nums[fastPoint] != 0)
                 {
-                    nums[fastPoint] = 0;
-                }
+                    nums[slowPoint] = nums[fastPoint];
 
-                slowPoint++;
-            }
+                    if(slowPoint != fastPoint)
+                    {
+                        nums[fastPoint] = 0;
+                    }
+
+                    slowPoint++;
+                }
             
-            fastPoint++;
+                fastPoint++;
+            }
         }
     }
 }

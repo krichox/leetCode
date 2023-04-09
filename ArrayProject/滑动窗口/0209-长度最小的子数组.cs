@@ -1,10 +1,8 @@
 using System;
 
-namespace Array.滑动窗口
+namespace ArrayProject.滑动窗口
 {
-}
-
-// https://leetcode.cn/problems/minimum-size-subarray-sum/
+    // https://leetcode.cn/problems/minimum-size-subarray-sum/
 /*给定一个含有 n 个正整数的数组和一个正整数 target 。
 
 找出该数组中满足其和 ≥ target 的长度最小的 连续子数组 [numsl, numsl+1, ..., numsr-1, numsr] ，并返回其长度。如果不存在符合条件的子数组，返回 0 。
@@ -37,27 +35,28 @@ Related Topics
 二分查找
 前缀和
 滑动窗口*/
-public class 长度最小的子数组
-{
-    public int MinSubArrayLen(int target, int[] nums)
+    public class 长度最小的子数组
     {
-        var left = 0;
-        var right = 0;
-        var sum = 0;
-        var minSubArrayLen = int.MaxValue;
-        while (right < nums.Length)
+        public int MinSubArrayLen(int target, int[] nums)
         {
-            sum = sum + nums[right];
-            while (sum >= target)
+            var left = 0;
+            var right = 0;
+            var sum = 0;
+            var minSubArrayLen = int.MaxValue;
+            while (right < nums.Length)
             {
-                minSubArrayLen = Math.Min(minSubArrayLen, right - left + 1);
-                sum = sum - nums[left];
-                left++;
+                sum = sum + nums[right];
+                while (sum >= target)
+                {
+                    minSubArrayLen = Math.Min(minSubArrayLen, right - left + 1);
+                    sum = sum - nums[left];
+                    left++;
+                }
+
+                right++;
             }
 
-            right++;
+            return minSubArrayLen == int.MaxValue ? 0 : minSubArrayLen;
         }
-
-        return minSubArrayLen == int.MaxValue ? 0 : minSubArrayLen;
     }
 }

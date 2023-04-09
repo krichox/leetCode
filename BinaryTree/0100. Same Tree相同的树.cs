@@ -1,6 +1,6 @@
-namespace BinaryTree {}
-
-/*https://leetcode.cn/problems/same-tree/*/
+namespace BinaryTree
+{
+    /*https://leetcode.cn/problems/same-tree/*/
 /*Given the roots of two binary trees p and q, write a function to check if they are the same or not.
 
 Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
@@ -17,30 +17,31 @@ Example 3:
 
 Input: p = [1,2,1], q = [1,1,2]
 Output: false*/
-public class 相同的树
-{
-    public bool IsSameTree(TreeNode p, TreeNode q)
+    public class 相同的树
     {
-        return sampeTree(p, q);
-    }
-
-    private bool sampeTree(TreeNode left, TreeNode right)
-    {
-        if (left == null && right == null)
+        public bool IsSameTree(TreeNode p, TreeNode q)
         {
-            return true;
+            return sampeTree(p, q);
         }
 
-        if (left == null || right == null)
+        private bool sampeTree(TreeNode left, TreeNode right)
         {
-            return false;
-        }
+            if (left == null && right == null)
+            {
+                return true;
+            }
 
-        if (left.Val != right.Val)
-        {
-            return false;
-        }
+            if (left == null || right == null)
+            {
+                return false;
+            }
 
-        return sampeTree(left.Left, right.Left) && sampeTree(left.Right, right.Right);
+            if (left.Val != right.Val)
+            {
+                return false;
+            }
+
+            return sampeTree(left.Left, right.Left) && sampeTree(left.Right, right.Right);
+        }
     }
 }

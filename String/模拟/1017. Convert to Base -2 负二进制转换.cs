@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿
 using System.Text;
 
 namespace String.模拟
@@ -34,7 +33,7 @@ namespace String.模拟
             }
 
             var charArray = sb.ToString().ToCharArray();
-            Array.Reverse(charArray);
+            System.Array.Reverse(charArray);
             return new string(charArray);
         }
     }

@@ -30,45 +30,47 @@ myQueue.empty(); // return false
 
 using System.Collections;
 
+namespace QueueStack
+{
+    public class MyQueue {
 
-public class MyQueue {
+        private Stack _stackIn;
+        private Stack _stackOut;
 
-    private Stack _stackIn;
-    private Stack _stackOut;
-
-    public MyQueue() {
-        _stackIn = new Stack();
-        _stackOut = new Stack();
-    }
-    
-    public void Push(int x) {
-        _stackIn.Push(x);
-    }
-    
-    public int Pop() {
-        DumpStackIn();
-        return (int)_stackOut.Pop();
-
-    }
-    
-    public int Peek() {
-        DumpStackIn();
-        return (int)_stackOut.Peek();
-    }
-    
-    public bool Empty() {
-        return _stackIn.Count == 0 && _stackOut.Count == 0; 
-    }
-
-    private void DumpStackIn()
-    {
-        if(_stackOut.Count != 0)
-        {
-            return;
+        public MyQueue() {
+            _stackIn = new Stack();
+            _stackOut = new Stack();
         }
-        while(_stackIn.Count != 0)
+    
+        public void Push(int x) {
+            _stackIn.Push(x);
+        }
+    
+        public int Pop() {
+            DumpStackIn();
+            return (int)_stackOut.Pop();
+
+        }
+    
+        public int Peek() {
+            DumpStackIn();
+            return (int)_stackOut.Peek();
+        }
+    
+        public bool Empty() {
+            return _stackIn.Count == 0 && _stackOut.Count == 0; 
+        }
+
+        private void DumpStackIn()
         {
-            _stackOut.Push(_stackIn.Pop());
+            if(_stackOut.Count != 0)
+            {
+                return;
+            }
+            while(_stackIn.Count != 0)
+            {
+                _stackOut.Push(_stackIn.Pop());
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace Array.双指针
+﻿namespace ArrayProject.双指针
 {
     /*https://leetcode.cn/problems/valid-mountain-array/description/*/
     public class Valid_Mountain_Array有效的山脉数组 {

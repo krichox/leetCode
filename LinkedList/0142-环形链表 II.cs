@@ -1,6 +1,6 @@
-namespace LinkedList {}
-
-/*https://leetcode.cn/problems/linked-list-cycle-ii/*/
+namespace LinkedList
+{
+    /*https://leetcode.cn/problems/linked-list-cycle-ii/*/
 
 /*Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
 
@@ -23,28 +23,53 @@ Example 3:
 Input: head = [1], pos = -1
 Output: no cycle
 Explanation: There is no cycle in the linked list.*/
-public class 环形链表Ii {
-    public ListNode DetectCycle(ListNode head) {
-        var slow = head;
-        var fast = head;
-        while(fast != null && fast.Next != null)
-        {
-            slow = slow.Next;
-            fast = fast.Next.Next;
-            if(slow == fast)
+    public class 环形链表Ii {
+        public ListNode DetectCycle(ListNode head) {
+            var slow = head;
+            var fast = head;
+            while(fast != null && fast.Next != null)
             {
-                var index1 = head;
-                var index2 = fast;
-                while(index1 != index2)
+                slow = slow.Next;
+                fast = fast.Next.Next;
+                if(slow == fast)
                 {
-                    index1 = index1.Next;
-                    index2 = index2.Next;
+                    var index1 = head;
+                    var index2 = fast;
+                    while(index1 != index2)
+                    {
+                        index1 = index1.Next;
+                        index2 = index2.Next;
                     
-                }
+                    }
                 
-                return index1;
+                    return index1;
+                }
             }
+            return null;
         }
-        return null;
+    
+        public ListNode DetectCycle2(ListNode head) {
+            var slow = head;
+            var fast = head;
+            while(fast != null && fast.Next != null)
+            {
+                slow = slow.Next;
+                fast = fast.Next.Next;
+                // 相遇之后，头节点和相遇结点继续走
+                if(slow == fast)
+                {
+                    while(slow != head)
+                    {
+                        slow = slow.Next;
+                        head = head.Next;
+                    }
+                    return slow;
+                }
+            }
+
+            return null;
+        }
+    
+    
     }
 }

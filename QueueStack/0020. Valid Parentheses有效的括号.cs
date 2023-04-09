@@ -1,8 +1,8 @@
 using System.Collections;
 
-namespace QueueStack {}
-
-/*Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+namespace QueueStack
+{
+    /*Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 An input string is valid if:
 
@@ -21,40 +21,41 @@ Example 3:
 Input: s = "(]"
 Output: false
 */
-public class 有效对括号
-{
-    public bool IsValid(string s)
+    public class 有效对括号
     {
-        var stack = new Stack();
-        for (var i = 0; i < s.Length; i++)
+        public bool IsValid(string s)
         {
-            if (s[i] == '{')
+            var stack = new Stack();
+            for (var i = 0; i < s.Length; i++)
             {
-                stack.Push('}');
+                if (s[i] == '{')
+                {
+                    stack.Push('}');
+                }
+                else if (s[i] == '(')
+                {
+                    stack.Push(')');
+                }
+                else if (s[i] == '[')
+                {
+                    stack.Push(']');
+                }
+                else if (stack.Count == 0 || (char)stack.Peek() != s[i])
+                {
+                    return false;
+                }
+                else
+                {
+                    stack.Pop();
+                }
             }
-            else if (s[i] == '(')
-            {
-                stack.Push(')');
-            }
-            else if (s[i] == '[')
-            {
-                stack.Push(']');
-            }
-            else if (stack.Count == 0 || (char)stack.Peek() != s[i])
-            {
-                return false;
-            }
-            else
-            {
-                stack.Pop();
-            }
-        }
 
-        if (stack.Count == 0)
-        {
-            return true;
-        }
+            if (stack.Count == 0)
+            {
+                return true;
+            }
 
-        return false;
+            return false;
+        }
     }
 }

@@ -1,9 +1,6 @@
-namespace Array.BinarySearch
+namespace ArrayProject.BinarySearch
 {
-    
-}
-
-/*给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。
+    /*给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。
 
 如果数组中不存在目标值 target，返回[-1, -1]。
 
@@ -36,84 +33,85 @@ nums 是一个非递减数组
 - 109 <= target <= 109*/
 
 
-public class 在排序数组中查找元素的第一个和最后一个位置
-{
-    public int[] SearchRange(int[] nums, int target)
+    public class 在排序数组中查找元素的第一个和最后一个位置
     {
-        var left = 0;
-        var right = nums.Length - 1;
-        var mid = 0;
-        var l = left;
-        var r = right;
-        // 从左向右逼近
-        while (left < right)
+        public int[] SearchRange(int[] nums, int target)
         {
-            mid = (right + left) / 2;
-            if (nums[mid] < target)
+            var left = 0;
+            var right = nums.Length - 1;
+            var mid = 0;
+            var l = left;
+            var r = right;
+            // 从左向右逼近
+            while (left < right)
             {
-                left = mid + 1;
+                mid = (right + left) / 2;
+                if (nums[mid] < target)
+                {
+                    left = mid + 1;
+                }
+                else
+                {
+                    right = mid;
+                }
             }
-            else
-            {
-                right = mid;
-            }
-        }
 
-        if (left > right || nums[left] != target)
-        {
-            return new[] { -1, -1 };
-        }
-
-        // 从右向左逼近
-        while (l < r)
-        {
-            mid = (l + r) / 2 + 1;
-            if (nums[mid] > target)
+            if (left > right || nums[left] != target)
             {
-                r = mid - 1;
+                return new[] { -1, -1 };
             }
-            else
-            {
-                l = mid;
-            }
-        }
 
-        return new[] { left, r };
-    }
+            // 从右向左逼近
+            while (l < r)
+            {
+                mid = (l + r) / 2 + 1;
+                if (nums[mid] > target)
+                {
+                    r = mid - 1;
+                }
+                else
+                {
+                    l = mid;
+                }
+            }
+
+            return new[] { left, r };
+        }
     
-    // 更好的解法
-    // L -1 < target
-    // R + 1 >= target
-    public int[] SearchRange2(int[] nums, int target) {
-        var start = lowBound(nums, target);
-        if(start == nums.Length || nums[start] != target)
-        {
-            return new int[] {-1, -1};
-        }
-        var end = lowBound(nums, target + 1) - 1;
+        // 更好的解法
+        // L -1 < target
+        // R + 1 >= target
+        public int[] SearchRange2(int[] nums, int target) {
+            var start = lowBound(nums, target);
+            if(start == nums.Length || nums[start] != target)
+            {
+                return new int[] {-1, -1};
+            }
+            var end = lowBound(nums, target + 1) - 1;
         
-        return new int[] {start, end};
-    }
-
-    private int lowBound(int[] nums, int target)
-    {
-        var left = 0;
-        var right = nums.Length - 1;
-
-        while(left <= right)
-        {
-            var mid = left + (right - left) / 2;
-
-            if(nums[mid] < target)
-            {
-                left = mid + 1;
-            }
-            else
-            {
-                right = mid - 1;
-            }
+            return new int[] {start, end};
         }
 
-        return left;
+        private int lowBound(int[] nums, int target)
+        {
+            var left = 0;
+            var right = nums.Length - 1;
+
+            while(left <= right)
+            {
+                var mid = left + (right - left) / 2;
+
+                if(nums[mid] < target)
+                {
+                    left = mid + 1;
+                }
+                else
+                {
+                    right = mid - 1;
+                }
+            }
+
+            return left;
+        }
     }
 }

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace BinaryTree {}
-
-/*https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/*/
+namespace BinaryTree
+{
+    /*https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/*/
 /*You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition:
 
 struct Node {
@@ -22,69 +22,70 @@ Example 2:
 
 Input: root = []
 Output: []*/
-public class 填充每个节点的下一个右侧节点指针
-{
-    public Node Connect(Node root)
+    public class 填充每个节点的下一个右侧节点指针
     {
-        if (root == null)
+        public Node Connect(Node root)
         {
+            if (root == null)
+            {
+                return root;
+            }
+
+            var queue = new Queue<Node>();
+            queue.Enqueue(root);
+            while (queue.Count != 0)
+            {
+                var count = queue.Count;
+                for (var i = 0; i < count; i++)
+                {
+                    var node = queue.Dequeue();
+                    if (i == count - 1)
+                    {
+                        node.next = null;
+                    }
+                    else
+                    {
+                        node.next = queue.Peek();
+                    }
+
+                    if (node.left != null)
+                    {
+                        queue.Enqueue(node.left);
+                    }
+
+                    if (node.right != null)
+                    {
+                        queue.Enqueue(node.right);
+                    }
+                }
+            }
+
             return root;
         }
 
-        var queue = new Queue<Node>();
-        queue.Enqueue(root);
-        while (queue.Count != 0)
+        public class Node
         {
-            var count = queue.Count;
-            for (var i = 0; i < count; i++)
+            public int val;
+            public Node left;
+            public Node right;
+            public Node next;
+
+            public Node()
             {
-                var node = queue.Dequeue();
-                if (i == count - 1)
-                {
-                    node.next = null;
-                }
-                else
-                {
-                    node.next = queue.Peek();
-                }
-
-                if (node.left != null)
-                {
-                    queue.Enqueue(node.left);
-                }
-
-                if (node.right != null)
-                {
-                    queue.Enqueue(node.right);
-                }
             }
-        }
 
-        return root;
-    }
+            public Node(int _val)
+            {
+                val = _val;
+            }
 
-    public class Node
-    {
-        public int val;
-        public Node left;
-        public Node right;
-        public Node next;
-
-        public Node()
-        {
-        }
-
-        public Node(int _val)
-        {
-            val = _val;
-        }
-
-        public Node(int _val, Node _left, Node _right, Node _next)
-        {
-            val = _val;
-            left = _left;
-            right = _right;
-            next = _next;
+            public Node(int _val, Node _left, Node _right, Node _next)
+            {
+                val = _val;
+                left = _left;
+                right = _right;
+                next = _next;
+            }
         }
     }
 }

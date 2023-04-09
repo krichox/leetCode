@@ -1,8 +1,8 @@
 using System;
 
-namespace BinaryTree {}
-
-/*https://leetcode.cn/problems/balanced-binary-tree/*/
+namespace BinaryTree
+{
+    /*https://leetcode.cn/problems/balanced-binary-tree/*/
 /*Given a binary tree, determine if it is height-balanced.
  
 For this problem, a height-balanced binary tree is defined as:
@@ -19,38 +19,39 @@ Example 3:
 
 Input: root = []
 Output: true*/
-public class 高度平衡二叉树
-{
-    public bool IsBalanced(TreeNode root)
+    public class 高度平衡二叉树
     {
-        return getHeight(root) != -1;
-    }
-
-    private int getHeight(TreeNode node)
-    {
-        if (node == null)
+        public bool IsBalanced(TreeNode root)
         {
-            return 0;
+            return getHeight(root) != -1;
         }
 
-        var left = getHeight(node.Left);
-        if (left == -1)
+        private int getHeight(TreeNode node)
         {
-            return -1;
-        }
+            if (node == null)
+            {
+                return 0;
+            }
 
-        // 判断左边是否是平衡二叉树
-        var right = getHeight(node.Right);
-        if (right == -1)
-        {
-            return -1;
-        }
+            var left = getHeight(node.Left);
+            if (left == -1)
+            {
+                return -1;
+            }
 
-        if (Math.Abs(left - right) > 1)
-        {
-            return -1;
-        }
+            // 判断左边是否是平衡二叉树
+            var right = getHeight(node.Right);
+            if (right == -1)
+            {
+                return -1;
+            }
 
-        return Math.Max(left, right) + 1;
+            if (Math.Abs(left - right) > 1)
+            {
+                return -1;
+            }
+
+            return Math.Max(left, right) + 1;
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Array.滑动窗口
+namespace ArrayProject.滑动窗口
 {
     /*https://leetcode.cn/problems/minimum-recolors-to-get-k-consecutive-black-blocks/description/?languageTags=csharp
      2379. Minimum Recolors to Get K Consecutive Black Blocks

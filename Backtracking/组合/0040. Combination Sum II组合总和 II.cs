@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Backtracking
+namespace Backtracking.组合
 {
     /*https://leetcode.cn/problems/combination-sum-ii/
      

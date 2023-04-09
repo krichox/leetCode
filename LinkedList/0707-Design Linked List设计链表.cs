@@ -1,111 +1,111 @@
-namespace LinkedList {}
-
-public class DesignLinkedList
+namespace LinkedList
 {
-    public class ListNode
+    public class DesignLinkedList
     {
-        internal readonly int Val;
-        internal ListNode Next;
-
-        public ListNode(int val)
+        public class ListNode
         {
-            this.Val = val;
+            internal readonly int Val;
+            internal ListNode Next;
+
+            public ListNode(int val)
+            {
+                this.Val = val;
+            }
+
+            public ListNode(int val, ListNode next)
+            {
+                this.Val = val;
+                this.Next = next;
+            }
         }
 
-        public ListNode(int val, ListNode next)
+        public class MyLinkedList
         {
-            this.Val = val;
-            this.Next = next;
+            int size;
+
+            ListNode head;
+
+            public MyLinkedList()
+            {
+                size = 0;
+                // 哨兵指针, 虚指针
+                head = new ListNode(0);
+            }
+
+            public int Get(int index)
+            {
+                if (index < 0 || index >= size)
+                {
+                    return -1;
+                }
+
+                // 指针指向头部
+                var cur = head;
+                for (var i = 0; i <= index; i++)
+                {
+                    cur = cur.Next;
+                }
+
+                return cur.Val;
+            }
+
+            public void AddAtHead(int val)
+            {
+                AddAtIndex(0, val);
+            }
+
+            public void AddAtTail(int val)
+            {
+                AddAtIndex(size, val);
+            }
+
+            public void AddAtIndex(int index, int val)
+            {
+                if (index > size)
+                {
+                    return;
+                }
+
+                if (index < 0)
+                {
+                    index = 0;
+                }
+
+                var prev = head;
+                // 得到具体插入点
+                for (var i = 0; i < index; i++)
+                {
+                    prev = prev.Next;
+                }
+
+                var toBeAdd = new ListNode(val);
+                toBeAdd.Next = prev.Next;
+                prev.Next = toBeAdd;
+                size++;
+            }
+
+            public void DeleteAtIndex(int index)
+            {
+                if (index < 0 || index >= size)
+                {
+                    return;
+                }
+
+                // 指向头部
+                var prev = head;
+                // 找到需要删除的node 前驱
+                for (var i = 0; i < index; i++)
+                {
+                    // 向后移动
+                    prev = prev.Next;
+                }
+
+                // delete node
+                prev.Next = prev.Next.Next;
+                size--;
+            }
         }
     }
-
-    public class MyLinkedList
-    {
-        int size;
-
-        ListNode head;
-
-        public MyLinkedList()
-        {
-            size = 0;
-            // 哨兵指针, 虚指针
-            head = new ListNode(0);
-        }
-
-        public int Get(int index)
-        {
-            if (index < 0 || index >= size)
-            {
-                return -1;
-            }
-
-            // 指针指向头部
-            var cur = head;
-            for (var i = 0; i <= index; i++)
-            {
-                cur = cur.Next;
-            }
-
-            return cur.Val;
-        }
-
-        public void AddAtHead(int val)
-        {
-            AddAtIndex(0, val);
-        }
-
-        public void AddAtTail(int val)
-        {
-            AddAtIndex(size, val);
-        }
-
-        public void AddAtIndex(int index, int val)
-        {
-            if (index > size)
-            {
-                return;
-            }
-
-            if (index < 0)
-            {
-                index = 0;
-            }
-
-            var prev = head;
-            // 得到具体插入点
-            for (var i = 0; i < index; i++)
-            {
-                prev = prev.Next;
-            }
-
-            var toBeAdd = new ListNode(val);
-            toBeAdd.Next = prev.Next;
-            prev.Next = toBeAdd;
-            size++;
-        }
-
-        public void DeleteAtIndex(int index)
-        {
-            if (index < 0 || index >= size)
-            {
-                return;
-            }
-
-            // 指向头部
-            var prev = head;
-            // 找到需要删除的node 前驱
-            for (var i = 0; i < index; i++)
-            {
-                // 向后移动
-                prev = prev.Next;
-            }
-
-            // delete node
-            prev.Next = prev.Next.Next;
-            size--;
-        }
-    }
-}
 
 
 
@@ -254,3 +254,4 @@ public class MyLinkedList {
         succ.prev = pred;
         }
 }*/
+}

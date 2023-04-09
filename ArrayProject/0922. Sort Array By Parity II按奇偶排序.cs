@@ -1,4 +1,4 @@
-﻿namespace Array
+﻿namespace ArrayProject
 {
     /*https://leetcode.cn/problems/sort-array-by-parity-ii/description/*/
     public class Sort_Array_By_Parity_II按奇偶排序 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Array.前缀和
+namespace ArrayProject.前缀和
 {
     /*https://leetcode.cn/problems/make-sum-divisible-by-p/description/
      Given an array of positive integers nums, remove the smallest subarray (possibly empty) such that the sum of the remaining elements is divisible by p. It is not allowed to remove the whole array.

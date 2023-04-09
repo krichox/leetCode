@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace QueueStack {}
-
-/*https://leetcode.cn/problems/top-k-frequent-elements/*/
+namespace QueueStack
+{
+    /*https://leetcode.cn/problems/top-k-frequent-elements/*/
 /*Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
 Example 1:
@@ -17,41 +17,42 @@ Output: [1]*/
 要统计元素出现频率
 对频率排序
 找出前K个高频元素*/
-public class 前K个高频出现元素
-{
-    public int[] TopKFrequent(int[] nums, int k)
+    public class 前K个高频出现元素
     {
-        var dic = new Dictionary<int, int>();
-        // 添加到dic
-        for (var i = 0; i < nums.Length; i++)
+        public int[] TopKFrequent(int[] nums, int k)
         {
-            if (dic.ContainsKey(nums[i]))
+            var dic = new Dictionary<int, int>();
+            // 添加到dic
+            for (var i = 0; i < nums.Length; i++)
             {
-                dic[nums[i]]++;
+                if (dic.ContainsKey(nums[i]))
+                {
+                    dic[nums[i]]++;
+                }
+                else
+                {
+                    dic.Add(nums[i], 1);
+                }
             }
-            else
+
+            var pq = new PriorityQueue<int, int>();
+            // 添加到优先队列
+            foreach (var kv in dic)
             {
-                dic.Add(nums[i], 1);
+                pq.Enqueue(kv.Key, kv.Value);
+                if (pq.Count == k + 1)
+                {
+                    pq.Dequeue();
+                }
             }
-        }
 
-        var pq = new PriorityQueue<int, int>();
-        // 添加到优先队列
-        foreach (var kv in dic)
-        {
-            pq.Enqueue(kv.Key, kv.Value);
-            if (pq.Count == k + 1)
+            var res = new List<int>();
+            while (pq.Count > 0)
             {
-                pq.Dequeue();
+                res.Add(pq.Dequeue());
             }
-        }
 
-        var res = new List<int>();
-        while (pq.Count > 0)
-        {
-            res.Add(pq.Dequeue());
+            return res.ToArray();
         }
-
-        return res.ToArray();
     }
 }

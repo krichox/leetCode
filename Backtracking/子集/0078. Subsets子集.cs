@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Backtracking
+namespace Backtracking.子集
 {
     /*https://leetcode.cn/problems/subsets/description/
      Given an integer array nums of unique elements, return all possible 

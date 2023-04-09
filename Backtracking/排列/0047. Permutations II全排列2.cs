@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Backtracking
+namespace Backtracking.排列
 {
     /*https://leetcode.cn/problems/permutations-ii/
      Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order.

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Array1
+namespace ArrayProject
 {
     public class How_Many_Numbers_Are_Smaller_Than_the_Current_Number有多少个数字小于当前数组 {
     public int[] SmallerNumbersThanCurrent(int[] nums) {

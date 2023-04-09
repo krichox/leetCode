@@ -1,6 +1,6 @@
-namespace Array.螺旋矩阵{}
-
-/*给你一个正整数 n ，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的 n x n 正方形矩阵 matrix 。
+namespace ArrayProject.螺旋矩阵
+{
+    /*给你一个正整数 n ，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的 n x n 正方形矩阵 matrix 。
 
 示例 1：
 输入：n = 3
@@ -17,52 +17,53 @@ Related Topics
 矩阵
 模拟*/
 
-public class 螺旋矩阵
-{
-    public int[][] GenerateMatrix(int n)
+    public class 螺旋矩阵
     {
-        var left = 0;
-        var right = n - 1;
-        var top = 0;
-        var button = n - 1;
-        var result = new int[n][];
-        var num = 0;
-        for (var i = 0; i < n; i++)
+        public int[][] GenerateMatrix(int n)
         {
-            result[i] = new int[n];
+            var left = 0;
+            var right = n - 1;
+            var top = 0;
+            var button = n - 1;
+            var result = new int[n][];
+            var num = 0;
+            for (var i = 0; i < n; i++)
+            {
+                result[i] = new int[n];
+            }
+
+            while (num < (n * n))
+            {
+                for (var i = left; i <= right; i++)
+                {
+                    result[top][i] = ++num;
+                }
+
+                top++;
+
+                for (var i = top; i <= button; i++)
+                {
+                    result[i][right] = ++num;
+                }
+
+                right--;
+
+                for (var i = right; i >= left; i--)
+                {
+                    result[button][i] = ++num;
+                }
+
+                button--;
+
+                for (var i = button; i >= top; i--)
+                {
+                    result[i][left] = ++num;
+                }
+
+                left++;
+            }
+
+            return result;
         }
-
-        while (num < (n * n))
-        {
-            for (var i = left; i <= right; i++)
-            {
-                result[top][i] = ++num;
-            }
-
-            top++;
-
-            for (var i = top; i <= button; i++)
-            {
-                result[i][right] = ++num;
-            }
-
-            right--;
-
-            for (var i = right; i >= left; i--)
-            {
-                result[button][i] = ++num;
-            }
-
-            button--;
-
-            for (var i = button; i >= top; i--)
-            {
-                result[i][left] = ++num;
-            }
-
-            left++;
-        }
-
-        return result;
     }
 }

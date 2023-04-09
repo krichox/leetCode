@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Backtracking
+namespace Backtracking.排列
 {
     /*https://leetcode.cn/problems/permutations/description/
      Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.

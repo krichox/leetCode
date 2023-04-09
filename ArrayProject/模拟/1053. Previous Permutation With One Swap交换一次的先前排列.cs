@@ -1,4 +1,4 @@
-﻿namespace Array.模拟
+﻿namespace ArrayProject.模拟
 {
     /*https://leetcode.cn/problems/previous-permutation-with-one-swap/description/*/
     public class Previous_Permutation_With_One_Swap交换一次的先前排列 {

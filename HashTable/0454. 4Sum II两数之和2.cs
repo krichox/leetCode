@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-namespace HashTable {}
-
-/*https://leetcode.cn/problems/4sum-ii/*/
+namespace HashTable
+{
+    /*https://leetcode.cn/problems/4sum-ii/*/
 /*Given four integer arrays nums1, nums2, nums3, and nums4 all of length n, return the number of tuples (i, j, k, l) such that:
 
 0 <= i, j, k, l < n
@@ -21,40 +21,41 @@ Example 2:
 Input: nums1 = [0], nums2 = [0], nums3 = [0], nums4 = [0]
 Output: 1
 。*/
-public class 两数之和2
-{
-    public int FourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4)
+    public class 两数之和2
     {
-        var dic = new Dictionary<int, int>();
-        foreach (var i in nums1)
+        public int FourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4)
         {
-            foreach (var j in nums2)
+            var dic = new Dictionary<int, int>();
+            foreach (var i in nums1)
             {
-                var sum = i + j;
-                if (dic.ContainsKey(i + j))
+                foreach (var j in nums2)
                 {
-                    dic[i + j] += 1;
-                }
-                else
-                {
-                    dic[i + j] = 1;
+                    var sum = i + j;
+                    if (dic.ContainsKey(i + j))
+                    {
+                        dic[i + j] += 1;
+                    }
+                    else
+                    {
+                        dic[i + j] = 1;
+                    }
                 }
             }
-        }
 
-        var res = 0;
-        foreach (var i in nums3)
-        {
-            foreach (var j in nums4)
+            var res = 0;
+            foreach (var i in nums3)
             {
-                var temp = i + j;
-                if (dic.ContainsKey(-i - j))
+                foreach (var j in nums4)
                 {
-                    res += dic[-i - j];
+                    var temp = i + j;
+                    if (dic.ContainsKey(-i - j))
+                    {
+                        res += dic[-i - j];
+                    }
                 }
             }
-        }
 
-        return res;
+            return res;
+        }
     }
 }

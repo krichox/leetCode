@@ -1,6 +1,6 @@
-namespace String {}
-
-/*https://leetcode.cn/problems/implement-strstr/*/
+namespace String
+{
+    /*https://leetcode.cn/problems/implement-strstr/*/
 /*Implement strStr().
  
 Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle
@@ -18,45 +18,45 @@ Example 2:
 Input: haystack = "aaaaa", needle = "bba"
 Output: -1*/
 
-public class 实现strStr
-{
-    public int StrStr暴力算法(string haystack, string needle)
+    public class 实现strStr
     {
-        if (string.IsNullOrEmpty(needle))
+        public int StrStr暴力算法(string haystack, string needle)
         {
-            return 0;
-        }
-
-        for (var i = 0; i < haystack.Length; i++)
-        {
-            var needlePer = 0;
-            if (haystack[i] == needle[needlePer])
+            if (string.IsNullOrEmpty(needle))
             {
-                var haystackPer = i;
-                if (haystack.Length - haystackPer < needle.Length)
-                {
-                    return -1;
-                }
+                return 0;
+            }
 
-                while (needlePer < needle.Length && haystack[haystackPer] == needle[needlePer])
+            for (var i = 0; i < haystack.Length; i++)
+            {
+                var needlePer = 0;
+                if (haystack[i] == needle[needlePer])
                 {
-                    needlePer++;
-                    haystackPer++;
-                }
+                    var haystackPer = i;
+                    if (haystack.Length - haystackPer < needle.Length)
+                    {
+                        return -1;
+                    }
 
-                if (needlePer == needle.Length)
-                {
-                    return i;
+                    while (needlePer < needle.Length && haystack[haystackPer] == needle[needlePer])
+                    {
+                        needlePer++;
+                        haystackPer++;
+                    }
+
+                    if (needlePer == needle.Length)
+                    {
+                        return i;
+                    }
                 }
             }
+
+            return -1;
         }
 
-        return -1;
-    }
 
-
-    // next 数组考虑的是除当前字符外的最长相同前缀后缀
-    /*“KMP的算法流程：
+        // next 数组考虑的是除当前字符外的最长相同前缀后缀
+        /*“KMP的算法流程：
 
 假设现在文本串S匹配到 i 位置，模式串P匹配到 j 位置
 如果j = -1，或者当前字符匹配成功（即S[i] == P[j]），都令i++，j++，继续匹配下一个字符；
@@ -66,60 +66,61 @@ public class 实现strStr
 */
 
 
-    public int StrStr(string haystack, string needle)
-    {
-        if (needle.Length == 0)
+        public int StrStr(string haystack, string needle)
         {
-            return 0;
-        }
-
-        var next = GetNext(needle);
-        var j = -1;
-        for (var i = 0; i < haystack.Length; i++)
-        {
-            // 不匹配时，回退到next[j]
-            while (j >= 0 && haystack[i] != needle[j + 1])
+            if (needle.Length == 0)
             {
-                // 移动指针j
-                j = next[j];
+                return 0;
             }
+
+            var next = GetNext(needle);
+            var j = -1;
+            for (var i = 0; i < haystack.Length; i++)
+            {
+                // 不匹配时，回退到next[j]
+                while (j >= 0 && haystack[i] != needle[j + 1])
+                {
+                    // 移动指针j
+                    j = next[j];
+                }
             
-            // 匹配继续向后
-            if (haystack[i] == needle[j + 1])
-            {
-                j++;
+                // 匹配继续向后
+                if (haystack[i] == needle[j + 1])
+                {
+                    j++;
+                }
+
+                // 长度匹配到匹配串到长度
+                if (j == needle.Length - 1)
+                {
+                    return (i - needle.Length + 1);
+                }
             }
 
-            // 长度匹配到匹配串到长度
-            if (j == needle.Length - 1)
-            {
-                return (i - needle.Length + 1);
-            }
+            return -1;
         }
 
-        return -1;
-    }
-
-    public int[] GetNext(string s)
-    {
-        var next = new int[s.Length];
-        var j = -1;
-        next[0] = j;
-        for (var i = 1; i < s.Length; i++)
+        public int[] GetNext(string s)
         {
-            while (j >= 0 && s[i] != s[j + 1])
+            var next = new int[s.Length];
+            var j = -1;
+            next[0] = j;
+            for (var i = 1; i < s.Length; i++)
             {
-                j = next[j];
+                while (j >= 0 && s[i] != s[j + 1])
+                {
+                    j = next[j];
+                }
+
+                if (s[i] == s[j + 1])
+                {
+                    j++;
+                }
+
+                next[i] = j;
             }
 
-            if (s[i] == s[j + 1])
-            {
-                j++;
-            }
-
-            next[i] = j;
+            return next;
         }
-
-        return next;
     }
 }

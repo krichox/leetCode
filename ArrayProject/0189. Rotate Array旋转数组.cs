@@ -1,4 +1,4 @@
-﻿namespace Array
+﻿namespace ArrayProject
 {
     /*https://leetcode.cn/problems/rotate-array/description/*/
     public class Rotate_Array旋转数组 {

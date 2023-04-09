@@ -1,5 +1,6 @@
-﻿namespace DoublePointer {}
-
-public class Class1
+﻿namespace DoublePointer
 {
+    public class Class1
+    {
+    }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Backtracking
+namespace Backtracking.分割
 {
     /*https://leetcode.cn/problems/restore-ip-addresses/
      A valid IP address consists of exactly four integers separated by single dots. Each integer is between 0 and 255 (inclusive) and cannot have leading zeros.

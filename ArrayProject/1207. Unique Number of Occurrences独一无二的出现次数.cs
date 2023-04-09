@@ -1,4 +1,4 @@
-﻿namespace HashTable
+﻿namespace ArrayProject
 {
     /*https://leetcode.cn/problems/unique-number-of-occurrences/description/*/
     public class Unique_Number_of_Occurrences独一无二的出现次数 {

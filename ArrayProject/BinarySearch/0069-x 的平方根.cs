@@ -1,6 +1,6 @@
-namespace Array.BinarySearch{}
-
-/*给你一个非负整数 x ，计算并返回 x 的 算术平方根 。
+namespace ArrayProject.BinarySearch
+{
+    /*给你一个非负整数 x ，计算并返回 x 的 算术平方根 。
 
 由于返回类型是整数，结果只保留 整数部分 ，小数部分将被 舍去 。
 
@@ -22,25 +22,26 @@ namespace Array.BinarySearch{}
 
 0 <= x <= 231 - 1*/
 
-public class X的平方根
-{
-    public int MySqrt(int x) {
-        var left = 0;
-        var right = x;
-        var ans = 0;
-        while(left <= right)
-        {
-            var mid = (left + right) / 2;
-            if((long) mid * mid <= x)
+    public class X的平方根
+    {
+        public int MySqrt(int x) {
+            var left = 0;
+            var right = x;
+            var ans = 0;
+            while(left <= right)
             {
-                ans = mid;
-                left = mid + 1;
-            }else
-            {
-                right = mid - 1;
+                var mid = (left + right) / 2;
+                if((long) mid * mid <= x)
+                {
+                    ans = mid;
+                    left = mid + 1;
+                }else
+                {
+                    right = mid - 1;
+                }
             }
-        }
 
-        return ans;
+            return ans;
+        }
     }
 }

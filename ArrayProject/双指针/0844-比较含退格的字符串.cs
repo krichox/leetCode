@@ -1,6 +1,6 @@
-namespace Array.双指针{}
-
-/*给定 s 和 t 两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返回 true 。# 代表退格字符。
+namespace ArrayProject.双指针
+{
+    /*给定 s 和 t 两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返回 true 。# 代表退格字符。
 
 注意：如果对空文本输入退格字符，文本继续为空。
 
@@ -31,68 +31,69 @@ Related Topics
 双指针
 字符串
 模拟*/
-public class 比较含退格的字符串 {
-    public bool BackspaceCompare(string s, string t) {
-        var skipS = 0;
-        var skipT = 0;
-        var i = s.Length - 1;
-        var j = t.Length - 1;
-        while(i >= 0 || j >=0)
-        {
-            while(i >= 0)
+    public class 比较含退格的字符串 {
+        public bool BackspaceCompare(string s, string t) {
+            var skipS = 0;
+            var skipT = 0;
+            var i = s.Length - 1;
+            var j = t.Length - 1;
+            while(i >= 0 || j >=0)
             {
-                if(s[i] == '#')
+                while(i >= 0)
                 {
-                    skipS++;
-                    i--;
-                }else if(skipS > 0)
+                    if(s[i] == '#')
+                    {
+                        skipS++;
+                        i--;
+                    }else if(skipS > 0)
+                    {
+                        skipS--;
+                        i--;
+                    }else
+                    {
+                        break;
+                    }
+                }
+
+
+                while(j >= 0)
                 {
-                    skipS--;
-                    i--;
+                    if(s[j] == '#')
+                    {
+                        skipT++;
+                        j--;
+                    }else if(skipT > 0)
+                    {
+                        skipT--;
+                        j--;
+                    }else
+                    {
+                        break;
+                    }
+                }
+
+                // 都还没有走完
+                if(i >= 0 && j >= 0)
+                {
+                    if(s[i] != t[j])
+                    {
+                        return false;
+                    }
+                    // 其中一个遍历完了
                 }else
                 {
-                    break;
+                    // 其中一个前面还有字母
+                    if(i >= 0 || j >= 0)
+                    {
+                        return false;
+                    }
                 }
+                i--;
+                j--;
             }
 
-
-            while(j >= 0)
-            {
-                if(s[j] == '#')
-                {
-                    skipT++;
-                    j--;
-                }else if(skipT > 0)
-                {
-                    skipT--;
-                    j--;
-                }else
-                {
-                    break;
-                }
-            }
-
-            // 都还没有走完
-            if(i >= 0 && j >= 0)
-            {
-                if(s[i] != t[j])
-                {
-                    return false;
-                }
-                // 其中一个遍历完了
-            }else
-            {
-                // 其中一个前面还有字母
-                if(i >= 0 || j >= 0)
-                {
-                    return false;
-                }
-            }
-            i--;
-            j--;
+            return true;
         }
 
-        return true;
     }
-
 }

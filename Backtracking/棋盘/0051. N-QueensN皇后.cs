@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace Backtracking
+namespace Backtracking.棋盘
 {
     /*https://leetcode.cn/problems/n-queens/description/
      The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.

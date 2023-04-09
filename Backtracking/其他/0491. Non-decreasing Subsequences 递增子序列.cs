@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Backtracking
+namespace Backtracking.其他
 {
     /*https://leetcode.cn/problems/non-decreasing-subsequences/description/
      Given an integer array nums, return all the different possible non-decreasing subsequences of the given array with at least two elements. You may return the answer in any order.

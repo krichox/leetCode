@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Backtracking
+namespace Backtracking.分割
 {
     /*Given a string s, partition s such that every 
 substring

@@ -1,6 +1,6 @@
-namespace QueueStack {}
-
-/*Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
+namespace QueueStack
+{
+    /*Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
 
 Implement the MyStack class:
 
@@ -28,34 +28,35 @@ myStack.push(2);
 myStack.top(); // return 2
 myStack.pop(); // return 2
 myStack.empty(); // return False*/
-public class 用队列实现栈
-{
-    private Queue<int> _queue;
+    public class 用队列实现栈
+    {
+        private Queue<int> _queue;
 
-    public 用队列实现栈() {
-        _queue = new Queue<int>();
-    }
-    
-    public void Push(int x) {
-        var tempQueueList = _queue.ToList();
-        while(_queue.Count != 0)
-        {
-            _queue.Dequeue();
+        public 用队列实现栈() {
+            _queue = new Queue<int>();
         }
+    
+        public void Push(int x) {
+            var tempQueueList = _queue.ToList();
+            while(_queue.Count != 0)
+            {
+                _queue.Dequeue();
+            }
 
-        _queue.Enqueue(x);
-        tempQueueList.ForEach(x => _queue.Enqueue(x));
-    }
+            _queue.Enqueue(x);
+            tempQueueList.ForEach(x => _queue.Enqueue(x));
+        }
     
-    public int Pop() {
-        return _queue.Dequeue();
-    }
+        public int Pop() {
+            return _queue.Dequeue();
+        }
     
-    public int Top() {
-        return _queue.Peek();
-    }
+        public int Top() {
+            return _queue.Peek();
+        }
     
-    public bool Empty() {
-        return _queue.Count == 0;
+        public bool Empty() {
+            return _queue.Count == 0;
+        }
     }
 }

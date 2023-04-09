@@ -1,4 +1,6 @@
-﻿namespace Greedy
+﻿using BinaryTree;
+
+namespace Greedy
 {
     /*https://leetcode.cn/problems/binary-tree-cameras/*/
     public class Binary_Tree_Cameras监控二叉树

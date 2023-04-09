@@ -1,4 +1,4 @@
-﻿namespace Backtracking
+﻿namespace Backtracking.棋盘
 {
     /*https://leetcode.cn/problems/sudoku-solver/description/
      Write a program to solve a Sudoku puzzle by filling the empty cells.

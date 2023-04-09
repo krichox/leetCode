@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Backtracking
+namespace Backtracking.子集
 {
     /*https://leetcode.cn/problems/subsets-ii/
      Given an integer array nums that may contain duplicates, return all possible 

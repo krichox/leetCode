@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 
-namespace BinaryTree {}
-/*https://leetcode.cn/problems/n-ary-tree-level-order-traversal/*/
+namespace BinaryTree
+{
+    /*https://leetcode.cn/problems/n-ary-tree-level-order-traversal/*/
 
 /*Given an n-ary tree, return the level order traversal of its nodes' values.
 
@@ -14,49 +15,50 @@ Example 2:
 
 Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
 Output: [[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]*/
-public class N叉树的层序遍历 {
-    public IList<IList<int>> LevelOrder(Node root) {
-        var result = new List<IList<int>>();
-        if(root == null)
-        {
-            return result;
-        }
-        var queue = new Queue<Node>();
-        queue.Enqueue(root);
-        while(queue.Count != 0)
-        {
-            var list = new List<int>();
-            var count = queue.Count;
-            for(var i = 0; i < count; i++)
+    public class N叉树的层序遍历 {
+        public IList<IList<int>> LevelOrder(Node root) {
+            var result = new List<IList<int>>();
+            if(root == null)
             {
-                var node = queue.Dequeue();
-                list.Add(node.val);
-                foreach (var perChildren in node.children)
+                return result;
+            }
+            var queue = new Queue<Node>();
+            queue.Enqueue(root);
+            while(queue.Count != 0)
+            {
+                var list = new List<int>();
+                var count = queue.Count;
+                for(var i = 0; i < count; i++)
                 {
-                    queue.Enqueue(perChildren);
+                    var node = queue.Dequeue();
+                    list.Add(node.val);
+                    foreach (var perChildren in node.children)
+                    {
+                        queue.Enqueue(perChildren);
+                    }
                 }
+
+                result.Add(list);
             }
 
-            result.Add(list);
+            return result;
+        }
+    }
+
+
+    public class Node {
+        public int val;
+        public IList<Node> children;
+
+        public Node() {}
+
+        public Node(int _val) {
+            val = _val;
         }
 
-        return result;
-    }
-}
-
-
-public class Node {
-    public int val;
-    public IList<Node> children;
-
-    public Node() {}
-
-    public Node(int _val) {
-        val = _val;
-    }
-
-    public Node(int _val, IList<Node> _children) {
-        val = _val;
-        children = _children;
+        public Node(int _val, IList<Node> _children) {
+            val = _val;
+            children = _children;
+        }
     }
 }
