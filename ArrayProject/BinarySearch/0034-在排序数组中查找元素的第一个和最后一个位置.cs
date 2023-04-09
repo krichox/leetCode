@@ -80,4 +80,40 @@ public class 在排序数组中查找元素的第一个和最后一个位置
 
         return new[] { left, r };
     }
+    
+    // 更好的解法
+    // L -1 < target
+    // R + 1 >= target
+    public int[] SearchRange2(int[] nums, int target) {
+        var start = lowBound(nums, target);
+        if(start == nums.Length || nums[start] != target)
+        {
+            return new int[] {-1, -1};
+        }
+        var end = lowBound(nums, target + 1) - 1;
+        
+        return new int[] {start, end};
+    }
+
+    private int lowBound(int[] nums, int target)
+    {
+        var left = 0;
+        var right = nums.Length - 1;
+
+        while(left <= right)
+        {
+            var mid = left + (right - left) / 2;
+
+            if(nums[mid] < target)
+            {
+                left = mid + 1;
+            }
+            else
+            {
+                right = mid - 1;
+            }
+        }
+
+        return left;
+    }
 }

@@ -29,6 +29,7 @@ Related Topics
 数组
 双指针*/
 public class 移动零 {
+    // 快慢指针
     public void MoveZeroes(int[] nums) {
         int slowPoint = 0;
         var fastPoint = 0;

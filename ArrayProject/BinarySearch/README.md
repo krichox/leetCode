@@ -12,3 +12,7 @@
 
 直到找到为止,时间复杂度:O(log(n))
 
+
+左闭右闭
+L -1 < target -> L <= target
+R + 1 >= target -> R < target

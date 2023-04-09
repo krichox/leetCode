@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{8A8C7C88-E2A6-49C0-945E-97506688224E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayProject", "ArrayProject\ArrayProject.csproj", "{8A8C7C88-E2A6-49C0-945E-97506688224E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{AEBE6FAC-DF24-4A06-9FF4-120FFDA489A3}"
 EndProject
