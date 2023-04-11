@@ -4,11 +4,11 @@ using System.Text;
 namespace DynamicPrograming.区间dp
 {
     /*https://leetcode.cn/problems/palindromic-substrings/description/*/
-    public class Palindromic_Substrings最长回文子串
+    public class Palindromic_Substrings回文子串
     {
         public int CountSubstrings(string s)
         {
-            // 定义dp数组，下标为i,j 时，是否为回文串
+            // 定义dp数组，数组区间为i,j 时，是否为回文串 
 
             var dp = new bool[s.Length, s.Length];
             var result = 0;
