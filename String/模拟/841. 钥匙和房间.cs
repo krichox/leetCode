@@ -5,6 +5,8 @@ namespace String.模拟
     /*https://leetcode.cn/problems/keys-and-rooms/description/*/
     public class 钥匙和房间
     {
+        // O(n + m)
+        // O(n) -> 系统栈
         public bool CanVisitAllRooms(IList<IList<int>> rooms)
         {
             var vistedRoom = new bool[rooms.Count];
