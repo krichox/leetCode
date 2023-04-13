@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtherProject", "OtherProjec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonotonicStack", "MonotonicStack\MonotonicStack.csproj", "{2A8A7536-2AE2-467E-866E-3F6760297088}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndLookup", "AndLookup\AndLookup.csproj", "{9ECBD75B-F260-4EE3-9C0B-F612994DD63C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,5 +92,9 @@ Global
 		{2A8A7536-2AE2-467E-866E-3F6760297088}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A8A7536-2AE2-467E-866E-3F6760297088}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A8A7536-2AE2-467E-866E-3F6760297088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECBD75B-F260-4EE3-9C0B-F612994DD63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECBD75B-F260-4EE3-9C0B-F612994DD63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECBD75B-F260-4EE3-9C0B-F612994DD63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECBD75B-F260-4EE3-9C0B-F612994DD63C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
