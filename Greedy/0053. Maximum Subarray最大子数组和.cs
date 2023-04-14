@@ -27,7 +27,7 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
  */
     public class Maximum_Subarray最大子数组和 {
         public int MaxSubArray(int[] nums) {
-            // 暴力解法
+            // 贪心算法
             var max = int.MinValue;
             var sequeceValue = 0;
             // 连续和为负数时，直接赋值为0，将下一个位置作为起点继续计算

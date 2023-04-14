@@ -1,4 +1,6 @@
-﻿namespace BinaryTree
+﻿using System.Collections.Generic;
+
+namespace BinaryTree
 {
     /*https://leetcode.cn/problems/delete-node-in-a-bst/
      Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.
@@ -70,6 +72,9 @@ Explanation: The tree does not contain a node with value = 0.*/
                 root.Right = DeleteNode(root.Right, key);
             }
 
+            var linkedList = new LinkedList<string>();
+            var linkedListFirst = linkedList.First;
+            var value = linkedListFirst.Value;
             return root;
         }
     }
