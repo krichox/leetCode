@@ -108,7 +108,7 @@
 	
 	
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e760b9b8_002Dfbd3_002D4ea0_002D9ce2_002D40f1afd382d6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e760b9b8_002Dfbd3_002D4ea0_002D9ce2_002D40f1afd382d6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1 #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test2&lt;/TestId&gt;&#xD;
@@ -132,9 +132,10 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test24&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test24&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test25&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test31&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f2333738_002Da31f_002D4437_002Da58c_002D5ed254447671/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f2333738_002Da31f_002D4437_002Da58c_002D5ed254447671/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test2&lt;/TestId&gt;&#xD;
@@ -160,6 +161,7 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test28&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test29&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test30&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test31&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

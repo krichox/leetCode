@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndLookup", "AndLookup\AndL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "算法排序", "算法排序\算法排序.csproj", "{711BA0C1-E33E-46DB-AFD0-1783A41F982B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{A67F5520-3722-499B-BA43-28566C2A06B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -102,5 +104,9 @@ Global
 		{711BA0C1-E33E-46DB-AFD0-1783A41F982B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{711BA0C1-E33E-46DB-AFD0-1783A41F982B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{711BA0C1-E33E-46DB-AFD0-1783A41F982B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A67F5520-3722-499B-BA43-28566C2A06B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A67F5520-3722-499B-BA43-28566C2A06B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A67F5520-3722-499B-BA43-28566C2A06B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A67F5520-3722-499B-BA43-28566C2A06B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

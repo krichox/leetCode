@@ -71,10 +71,7 @@ Explanation: The tree does not contain a node with value = 0.*/
             {
                 root.Right = DeleteNode(root.Right, key);
             }
-
-            var linkedList = new LinkedList<string>();
-            var linkedListFirst = linkedList.First;
-            var value = linkedListFirst.Value;
+            
             return root;
         }
     }
