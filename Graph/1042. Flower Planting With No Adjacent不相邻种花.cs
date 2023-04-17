@@ -6,6 +6,7 @@ namespace Graph
 {
     /*https://leetcode.cn/problems/flower-planting-with-no-adjacent/description/*/
     public class Flower_Planting_With_No_Adjacent不相邻种花 {
+        // 构建邻居接表，判断染色即可
         public int[] GardenNoAdj(int n, int[][] paths)
         {
             List<IList<int>> graph = new();

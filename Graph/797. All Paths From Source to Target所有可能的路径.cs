@@ -2,6 +2,8 @@
 
 namespace Graph
 {
+    /*https://leetcode.cn/problems/all-paths-from-source-to-target/description/*/
+    // 图的遍历
     public class All_Paths_From_Source_to_Target所有可能的路径
     {
         IList<int> path = new List<int>();

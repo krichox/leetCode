@@ -63,7 +63,7 @@ Explanation: Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","
             // 全排列所有， 选择还没有使用过的路程
             for (var i = 0; i < tickets.Count; i++)
             {
-                if (!used[i] && tickets[i][0].Equals(path[^1]))
+                if (!used[i] && tickets[i][0].Equals(path[path.Count - 1]))
                 {
                     path.Add(tickets[i][1]);
                     used[i] = true;

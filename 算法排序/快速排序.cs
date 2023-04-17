@@ -13,9 +13,7 @@ namespace 算法排序
             QuickSort(nums, 0, nums.Length - 1);
             return nums;
         }
-
         
-
         // 利用随机数解决升序和降序复杂为O(N^2)问题
         // 双路快排, 解决相同元素随机数失效问题
         void QuickSort(int[] nums, int left, int right)
@@ -24,7 +22,8 @@ namespace 算法排序
             {
                 return;
             }
-
+            
+            // 先排列一个数，再排左边和右边
             var pivotIndex = partition(nums, left, right);
             QuickSort(nums, left, pivotIndex - 1);
             QuickSort(nums, pivotIndex + 1, right);

@@ -62,5 +62,62 @@ namespace ArrayProject.螺旋矩阵
 
             return result;
         }
+        
+        public IList<int> SpiralOrder2(int[][] matrix) {
+            var leftBound = 0;
+            var topBound = 0;
+            var rightBound = matrix[0].Length - 1;
+            var buttonBound = matrix.Length - 1;
+            var result = new List<int>();
+            while(leftBound <= rightBound && topBound <= buttonBound)
+            {
+                // 左到右遍历
+                if(topBound <= buttonBound)
+                {
+                    for(var i = leftBound; i <= rightBound; i++)
+                    {
+                        result.Add(matrix[topBound][i]);
+                    }
+                    topBound++;
+                }
+
+                // 从右上到右下
+
+                if(leftBound <= rightBound)
+                {
+                    for(var i = topBound; i <= buttonBound; i++)
+                    {
+                        result.Add(matrix[i][rightBound]);
+                    }
+
+                    rightBound--;
+                }
+
+                // 右下到左下
+                if(topBound <= buttonBound)
+                {
+                    for(var i = rightBound; i >= leftBound; i--)
+                    {
+                        result.Add(matrix[buttonBound][i]);
+                    }
+                
+                    buttonBound--;
+                }
+
+                if(leftBound <= rightBound)
+                {
+                    for(var i = buttonBound; i >= topBound; i--)
+                    {
+                        result.Add(matrix[i][leftBound]);
+                    }
+                    leftBound++;
+                }
+
+            }
+
+            return result;
+        }
+        // O(nm) 矩阵里面的每一个元素都需要被访问一次
+        // O（1） 只使用了一个result输出结果
     }
 }

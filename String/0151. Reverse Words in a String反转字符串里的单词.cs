@@ -1,3 +1,4 @@
+using System;
 using System.Text;
 
 namespace String
@@ -70,6 +71,8 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
                     sb.Append(c);
                 }
 
+                sb.Remove(sb.Length - 1, 1);
+
                 left++;
             }
 
@@ -83,7 +86,7 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
                 (sb[left], sb[right]) = (sb[right], sb[left]);
                 left++;
                 right--;
-            }        
+            }
         }
 
         private void ReverseEachWords(StringBuilder sb)
@@ -102,6 +105,81 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
                 Reverse(sb, start, end - 1);
                 start = end + 1;
                 end++;
+            }
+        }
+        
+        public string ReverseWords2(string s) {
+            // 移除开头和结尾空格
+            var sb = TrimSpace(s);
+
+            ReverString(sb, 0, sb.Length - 1);
+
+            ReverseEachWord(sb);
+
+            return sb.ToString();
+
+        }
+
+        private  StringBuilder TrimSpace(string s)
+        {
+            var sb = new StringBuilder();
+            var left = 0;
+            var right = s.Length - 1;
+            // 去掉开头和结尾的空格
+            while(left <= right && char.IsWhiteSpace(s[left]))
+            {
+                left++;
+            }
+
+            while(left <= right && char.IsWhiteSpace(s[right]))
+            {
+                right--;
+            }
+
+            // 去除单词间空格
+            for(var i = left; i <= right; i++)
+            {
+                if(!char.IsWhiteSpace(s[i]))
+                {
+                    sb.Append(s[i]);
+                }else if(!char.IsWhiteSpace(sb[^1]))
+                {
+                    sb.Append(s[i]);
+                }
+            }
+
+            return sb;
+        }
+
+        private void ReverString(StringBuilder sb, int left, int right)
+        {
+            while(left <= right)
+            {
+                var temp = sb[left];
+                sb[left] = sb[right];
+                sb[right] = temp;
+                left++;
+                right--;
+            }
+        }
+
+        private void ReverseEachWord(StringBuilder sb)
+        {
+            var start = 0;
+            for(var i = 0; i < sb.Length; i++)
+            {
+                if(!char.IsWhiteSpace(sb[i]))
+                {
+                    if(i == sb.Length - 1)
+                    {
+                        ReverString(sb, start, i);
+                    }
+                }
+                else
+                {
+                    ReverString(sb, start, i - 1);
+                    start = i + 1;
+                }
             }
         }
     }
