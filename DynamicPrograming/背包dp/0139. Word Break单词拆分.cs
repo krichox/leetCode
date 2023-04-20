@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
+using LinkedList;
 
 namespace DynamicPrograming.背包dp
 {

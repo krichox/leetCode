@@ -133,6 +133,7 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test24&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test25&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test31&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test38&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f2333738_002Da31f_002D4437_002Da58c_002D5ed254447671/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -167,6 +168,7 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test34&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test35&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test36&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test37&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
