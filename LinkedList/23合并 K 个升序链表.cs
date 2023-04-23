@@ -12,7 +12,7 @@ namespace LinkedList
             var pq = new PriorityQueue<ListNode, int>();
             foreach(var perNode in lists)
             {
-                // 将每个链表的头结点加入最小堆里去
+                // 将每个链表的头结点加入最小堆里去， 注意判断空
                 if(perNode != null)
                 {
                     pq.Enqueue(perNode, perNode.Val);

@@ -90,5 +90,72 @@ Explanation: The only possible triplet sums up to 0.
 
             return result;
         }
+        
+        public IList<IList<int>> ThreeSum2(int[] nums) {
+            Array.Sort(nums);
+        
+            // 3数之和，从0开始，target为0
+            return nSumTarget(nums, 3, 0, 0);
+        }
+
+        public IList<IList<int>> nSumTarget(int[] nums, int n, int start, int target)
+        {
+            int len = nums.Length;
+            var res = new List<IList<int>>();
+            // 至少是2数之和且数组大小不应该小于n
+            if(n < 2 || len < n)
+            {
+                return res;
+            }
+            // 如果是两数之和
+            if(n == 2)
+            {
+                var left = start;
+                var right = len - 1;
+                while(left < right)
+                {
+                    var leftValue = nums[left];
+                    var rightValue = nums[right];
+                    if(nums[left] + nums[right] == target)
+                    {
+                        res.Add(new List<int>{leftValue, rightValue});
+                        // 去重相同元素
+                        while(left < right && nums[left] == leftValue )
+                        {
+                            left++;
+                        }
+                        while(left < right && nums[right] == rightValue)
+                        {
+                            right--;
+                        }
+                    }else if(nums[left] + nums[right] < target)
+                    {
+                        left++;
+                    }else
+                    {
+                        right--;
+                    }
+                }
+            }else
+            {
+                // n > 2递归计算，（n-1)sum的值
+                for(var i = start; i < len; i++)
+                {
+                    var sub = nSumTarget(nums, n - 1, i + 1, target - nums[i]);
+                    for(var j = 0; j < sub.Count; j++)
+                    {
+                        // n-1数之和，加上nums[i]就是n数之和
+                        sub[j].Add(nums[i]);
+                        res.Add(sub[j]);
+                    }
+                    // 统计结果去重
+                    while(i < len - 1 && nums[i] == nums[i + 1])
+                    {
+                        i++;
+                    }
+                }
+            }
+            return res;
+        }
     }
 }
