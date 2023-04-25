@@ -59,14 +59,9 @@ Output: ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]*/
                 if (IsStartWithZeroAndLess255(str))
                 {
                     path.Add(str);
+                    BackTracing(s, i + 1);
+                    path.RemoveAt(path.Count - 1);
                 }
-                else
-                {
-                    continue;
-                }
-
-                BackTracing(s, i + 1);
-                path.RemoveAt(path.Count - 1);
             }
         }
 

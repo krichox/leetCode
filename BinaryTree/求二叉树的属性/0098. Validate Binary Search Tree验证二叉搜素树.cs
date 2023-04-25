@@ -28,8 +28,8 @@ namespace BinaryTree
             {
                 return true;
             }
-
-
+            
+            // 中序遍历BST二叉搜索树一定是升序的，所以定义pre，当前节点一定是大于前一个节点的
             var leftNode = IsValidBST(root.Left);
             if(preNode != null && preNode.Val >= root.Val )
             {

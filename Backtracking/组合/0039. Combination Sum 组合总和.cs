@@ -38,8 +38,6 @@ Output: []*/
 
         public IList<IList<int>> CombinationSum(int[] candidates, int target)
         {
-            
-            var used = new bool[candidates.Length];
             // 将数组排序
             Array.Sort(candidates);
             BackTracing(candidates, target, 0);

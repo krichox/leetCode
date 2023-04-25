@@ -60,5 +60,50 @@ namespace Graph
        
             onPath[s] = false;
         }
+        
+        // BFS拓扑排序 
+        public bool CanFinish2(int numCourses, int[][] prerequisites) {
+            var graph = new HashSet<int>[numCourses];
+        
+            for(var i = 0; i < graph.Length; i++)
+            {
+                graph[i] = new HashSet<int>();
+            }
+            var ingree = new int[numCourses];
+            for(var i = 0; i < prerequisites.Length; i++)
+            {
+                graph[prerequisites[i][1]].Add(prerequisites[i][0]);
+                ingree[prerequisites[i][0]]++;
+            }
+
+            var queue = new Queue<int>();
+
+            // 入度为0的加入队列
+            for(var i = 0; i < ingree.Length; i++)
+            {
+                if(ingree[i] == 0)
+                {
+                    queue.Enqueue(i);
+                }
+            }
+
+            var count = 0;
+            while(queue.Count != 0)
+            {
+                var cur = queue.Dequeue();
+                count++;
+                foreach(var per in graph[cur])
+                {
+                    ingree[per]--;
+                    if(ingree[per] == 0)
+                    {
+                        queue.Enqueue(per);
+                    }
+                }
+            }
+
+            return count == numCourses;
+        }
     }
+    
 }

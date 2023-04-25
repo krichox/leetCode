@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 
 namespace QueueStack
 {
@@ -56,6 +57,36 @@ Output: false
             }
 
             return false;
+        }
+        
+        
+        public bool IsValid2(string s) {
+            var dic = new Dictionary<char, char>{
+                [')'] = '(',
+                ['}'] = '{',
+                [']'] = '['
+            };
+
+            var stack = new Stack<char>();
+
+            for(var i = 0; i < s.Length; i++)
+            {
+                if(s[i] == '(' || s[i] == '{' || s[i] == '[')
+                {
+                    stack.Push(s[i]);
+                }else
+                {
+                    if(stack.Count != 0 && dic[s[i]] == stack.Peek())
+                    {
+                        stack.Pop();
+                    }else
+                    {
+                        return false;
+                    }
+                }
+            
+            }
+            return stack.Count == 0;
         }
     }
 }

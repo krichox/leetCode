@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathProject", "MathProject\MathProject.csproj", "{80F280CD-FE1C-44D8-9A5D-CB56F96585EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridProject", "GridProject\GridProject.csproj", "{374939CF-AF13-4E61-AC98-502C6B4ABB22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,5 +116,9 @@ Global
 		{80F280CD-FE1C-44D8-9A5D-CB56F96585EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80F280CD-FE1C-44D8-9A5D-CB56F96585EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80F280CD-FE1C-44D8-9A5D-CB56F96585EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{374939CF-AF13-4E61-AC98-502C6B4ABB22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{374939CF-AF13-4E61-AC98-502C6B4ABB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{374939CF-AF13-4E61-AC98-502C6B4ABB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{374939CF-AF13-4E61-AC98-502C6B4ABB22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
