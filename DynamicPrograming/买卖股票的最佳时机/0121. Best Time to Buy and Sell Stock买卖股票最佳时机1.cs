@@ -33,7 +33,5 @@ namespace DynamicPrograming.买卖股票的最佳时机
 
             return Math.Max(dp[prices.Length - 1, 0], dp[prices.Length - 1, 1]);
         }
-        
-        
     }
 }

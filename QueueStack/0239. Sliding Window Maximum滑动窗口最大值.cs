@@ -33,6 +33,7 @@ Return the max sliding window.
             var len = nums.Length;
             var result = new int[len - k + 1];
             var dq = new LinkedList<int>();
+            var pq = new PriorityQueue<int, int>(Comparer<int>.Create((x, y) => y - x));
             for(var i = 0; i < len; i++)
             {
                 // 如果新元素大于队尾的元素
@@ -47,7 +48,7 @@ Return the max sliding window.
                     dq.RemoveFirst();
                 }
 
-                // 将数组下标添加到队尾
+                // 添加到队尾
                 dq.AddLast(i);
                 // 添加到result里
                 if(i >= k - 1)
@@ -58,6 +59,29 @@ Return the max sliding window.
             }
 
             return result;
+        }
+        
+        // 单调栈版本
+        public int[] MaxSlidingWindow2(int[] nums, int k) {
+            var pq = new PriorityQueue<int, int>(Comparer<int>.Create((x, y) => y - x));
+            var len = nums.Length;
+            var res = new int[len - k + 1];
+            for(var i = 0; i < len; i++)
+            {
+                pq.Enqueue(i, nums[i]);
+
+                while(pq.Count > k && pq.Peek() <= i - k)
+                {
+                    pq.Dequeue();
+                }
+
+                if(i >= k - 1)
+                {
+                    res[i - k + 1] = nums[pq.Peek()];
+                }
+            }
+
+            return res;
         }
     }
 }
