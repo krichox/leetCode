@@ -2,6 +2,7 @@
 
 namespace DynamicPrograming.买卖股票的最佳时机
 {
+    /**/
     public class Best_Time_to_Buy_and_Sell_Stock买卖股票最佳时机1 {
         public int MaxProfit(int[] prices) {
             // 贪心算法，取左最小值，取右最大值
