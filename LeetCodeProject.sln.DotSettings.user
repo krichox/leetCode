@@ -29,6 +29,52 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test22&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4af08f60_002Db71c_002D43bf_002Da127_002Ded9ab7bdfc9c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Session" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test2&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test3&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test2&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test3&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test4&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test5&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test6&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test8&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test10&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test11&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test12&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test13&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test14&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test20&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test21&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test22&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::UnitTest1.Test23&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test26&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test27&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test28&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test29&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test30&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test31&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test32&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test33&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test34&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test35&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test36&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test37&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test39&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test40&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test41&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test42&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test43&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test44&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test45&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test46&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test47&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test48&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test49&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b4e06374_002D629c_002D434f_002D9686_002D1cfa202fedef/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test1&lt;/TestId&gt;&#xD;
@@ -136,7 +182,7 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test38&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f2333738_002Da31f_002D4437_002Da58c_002D5ed254447671/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f2333738_002Da31f_002D4437_002Da58c_002D5ed254447671/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test1&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::D75C1194-0A56-4E3E-A72F-D84E73B8B5E9::net6.0::UnitTest1.Test2&lt;/TestId&gt;&#xD;
@@ -176,6 +222,7 @@
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test43&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test44&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test45&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::895F82A5-14CD-4C34-B982-C5FAAA0D36A2::net7.0::Test7.UnitTest1.Test46&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

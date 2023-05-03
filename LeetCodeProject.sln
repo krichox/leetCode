@@ -24,7 +24,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test7", "Test7\Test7.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicPrograming", "DynamicPrograming\DynamicPrograming.csproj", "{2619150A-7FEB-4AF6-8553-FC71523BF978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtherProject", "OtherProject\OtherProject.csproj", "{A223832F-9FEC-4027-8066-63FDB023CCE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "位运算", "位运算\位运算.csproj", "{A223832F-9FEC-4027-8066-63FDB023CCE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonotonicStack", "MonotonicStack\MonotonicStack.csproj", "{2A8A7536-2AE2-467E-866E-3F6760297088}"
 EndProject
